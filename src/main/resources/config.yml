@@ -1,0 +1,15 @@
+# A Tilion Commands Configuration file
+#
+#
+# Author TilionDC
+# @ tiliondc@gmail.com
+#
+#
+#
+#
+
+# Path Config
+Path-Enabled: true
+# Speed between 0 and 1.
+# 0.2 is default
+Path-Speed: 0.3

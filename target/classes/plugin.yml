@@ -1,0 +1,17 @@
+name: ATilionUtilities
+version: 0.1
+description: It adds some extra fun stuff to minecraft
+author: TilionDC
+
+main: me.tiliondc.atu.ATilionUtilities
+database: false
+
+commands:
+  atu:
+    desciption: General atilionUtilities command
+    permission: atu.admin
+    usage: Error, do '/atu help'
+
+permissions:
+  atu.admin:
+    description: Permission for admin stuff
