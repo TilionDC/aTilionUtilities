@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/listeners/PathBlockListener.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/listeners/PathBlockListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -85,8 +83,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50710225">
-              <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.38636363">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -941,7 +939,7 @@
       <workItem from="1464984822688" duration="603000" />
       <workItem from="1464987748923" duration="4348000" />
       <workItem from="1465038033448" duration="12759000" />
-      <workItem from="1465116345782" duration="23730000" />
+      <workItem from="1465116345782" duration="23974000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -967,11 +965,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465158231315</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added more upcomming features.">
+      <created>1465160857764</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1465160857764</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60389000" />
+    <option name="totallyTimeSpent" value="60633000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1027,7 +1031,8 @@
     <MESSAGE value="Updated readme and added sqlite support" />
     <MESSAGE value="Added /togglechairs command" />
     <MESSAGE value="Improved paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved paths" />
+    <MESSAGE value="Added more upcomming features." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more upcomming features." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1483,8 +1488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50710225">
-          <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.38636363">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding />
         </state>
       </provider>
