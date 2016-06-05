@@ -6,14 +6,14 @@ Any features in this mod can be disabled in the config.
 
 ## Features:
 
-###### Current Features:
+### Current Features:
     **Fly** - Do /fly [time] [player name] to fly or disable flying.
     **Sudo** - You can can override anyones chat and make them do commands.
     **Path block** - You walk faster on path blocks
     **Stair Chairs** - You can sit on chairs.
 
 
-######  Upcomming features:
+###  Upcomming features:
     __Kit__ - You can give players the ability to /kit [kit name] as long as they have the atu.kit.[kit name} permission.
     **Locked Chests Signs** - Use signs to lock a chest to you.
     **Elevator Signs** - Use signs to teleport a player up or down.
@@ -22,11 +22,9 @@ Any features in this mod can be disabled in the config.
     **Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
 
 
-## Config:
-
+###### Config:
 // Version of config. Do NOT change this
 Version: 0.0.2
-
 // Path Config
 Path:
   // Enable or disable this feature. Must be either true or false.
@@ -34,7 +32,6 @@ Path:
   // Speed between 0 and 1.
   // 0.2 is minecraft walk speed. 0.3 is config default
   Speed: 0.3
-
 // Stair Chairs Config
 Chair:
  // Encable or disbable this feature. Must be either true or false.
@@ -48,7 +45,6 @@ Chair:
  // Do you require to have nothing in your hand when you are trying to sit?
  // Default config values is true. Can only be true or false.
  Require-empty-hand: true
-
 // Fly command config
 Fly:
  // Encable or disbable this feature. Must be either true or false.

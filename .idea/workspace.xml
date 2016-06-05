@@ -83,8 +83,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38636363">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.6619318">
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -939,7 +939,7 @@
       <workItem from="1464984822688" duration="603000" />
       <workItem from="1464987748923" duration="4348000" />
       <workItem from="1465038033448" duration="12759000" />
-      <workItem from="1465116345782" duration="23974000" />
+      <workItem from="1465116345782" duration="24099000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -971,11 +971,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465160857764</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed readme">
+      <created>1465161103789</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1465161103789</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60633000" />
+    <option name="totallyTimeSpent" value="60758000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1032,7 +1038,8 @@
     <MESSAGE value="Added /togglechairs command" />
     <MESSAGE value="Improved paths" />
     <MESSAGE value="Added more upcomming features." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more upcomming features." />
+    <MESSAGE value="Fixed readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1488,8 +1495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38636363">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.6619318">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding />
         </state>
       </provider>
