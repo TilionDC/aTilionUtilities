@@ -1,0 +1,24 @@
+# This is a different type of kits approach. Instead of giving specific
+# Item you give commands run by the console
+# This means that you can give the player items
+# But also do commands that the player has no permission for
+# Just remember that they are run from the console side so if they
+# can't be run from the console it wont work.
+#
+# Tips and info:
+#
+# You can run a command from the players side with the use of the command 'sudo [player] [command]'
+# use '@p' to access the player that executed the kit command
+#
+# Don't forget to put either "" quotes or '' single quotes around the text. Otherwise it wont work.
+#
+# Examples:
+#
+# Give the player some stone
+# stone:
+#   - 'give @p stone 64'
+#
+# Make the player go home and say I have gone home
+# GoHome:
+#   - 'sudo @p I have gone home'
+#   - 'sudo @p /home'

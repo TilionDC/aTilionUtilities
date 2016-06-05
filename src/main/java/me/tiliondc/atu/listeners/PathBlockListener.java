@@ -1,15 +1,11 @@
 package me.tiliondc.atu.listeners;
 
 import me.tiliondc.atu.ATilionUtilities;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
-import org.bukkit.metadata.FixedMetadataValue;
-import org.bukkit.metadata.LazyMetadataValue;
-import org.bukkit.metadata.MetadataValue;
 
 public class PathBlockListener implements Listener {
 
@@ -31,9 +27,6 @@ public class PathBlockListener implements Listener {
         Material type2 = e.getFrom().getBlock().getRelative(BlockFace.DOWN).getType();
         Material type3 = e.getFrom().getBlock().getRelative(BlockFace.DOWN).getRelative(BlockFace.DOWN).getType();
 
-
-
-        System.out.println("Player is walking at speed: " + e.getPlayer().getWalkSpeed() + " and is walking on " + type2);
         // TODO: 16/06/03 Figure out a way to somehow change the value to twise of what the previous run speed was. Maybe use player metadata?
         if(type == Material.GRASS_PATH || type2 == Material.GRASS_PATH && type == Material.AIR || type3 == Material.GRASS_PATH && type2 == Material.AIR && type == Material.AIR) {
             e.getPlayer().setWalkSpeed(speed);

@@ -1,17 +1,41 @@
 name: ATilionUtilities
-version: 0.1
+version: 0.0.2
 description: It adds some extra fun stuff to minecraft
 author: TilionDC
 
 main: me.tiliondc.atu.ATilionUtilities
-database: false
+database: true
 
 commands:
   atu:
     desciption: General atilionUtilities command
     permission: atu.admin
     usage: Error, do '/atu help'
+  sudo:
+    description: Make a player do a command
+    permission: atu.sudo
+    usage: /sudo [player] [command]
+  togglechairs:
+    description: Toggles if you want to sit on stairs or not
+    permission: atu.chairs
+    usage: /togglechairs to toggle if you want to sit on stairs or not.
+  fly:
+    description: Enables/Disables flying
+    permission: atu.fly
+    usage: /fly [time in secounds] [playername]
 
 permissions:
   atu.admin:
     description: Permission for admin stuff
+  atu.sudo:
+    description: Permission for the sudo command. Should not be given to anyone.
+  atu.kit:
+    description: Permission for giving any kit to anyone. atu.kit.[kitname] for specific kits.
+  atu.fly:
+    description: Permission for being able to fly in survival mode.
+  atu.fly.others:
+    description: Permission for giving others the fly command.
+  atu.pathrun:
+    description: Permission reuqired to run faster on paths.
+  atu.chairs:
+    description: Permission required to sit and toggle sitting.

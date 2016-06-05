@@ -8,8 +8,35 @@
 #
 #
 
+# Version of config. Do NOT change this
+Version: 0.0.2
+
 # Path Config
-Path-Enabled: true
-# Speed between 0 and 1.
-# 0.2 is default
-Path-Speed: 0.3
+Path:
+  # Enable or disable this feature. Must be either true or false.
+  Enabled: true
+  # Speed between 0 and 1.
+  # 0.2 is minecraft walk speed. 0.3 is config default
+  Speed: 0.3
+
+# Stair Chairs Config
+Chair:
+ # Encable or disbable this feature. Must be either true or false.
+ Enabled: true
+ # Maximum distance you can be from the stair block
+ # Default config value is 2.5
+ Distance: 2.5
+ # Do you require signs on both sides of the stair?
+ # Default config value is false. Can only be true or false.
+ Require-Signs: false
+ # Do you require to have nothing in your hand when you are trying to sit?
+ # Default config values is true. Can only be true or false.
+ Require-empty-hand: true
+
+# Fly command config
+Fly:
+ # Encable or disbable this feature. Must be either true or false.
+ Enabled: true
+ # Take no fall damage when you are falling if the time runs out. Must be either true or false.
+ # Default config value is true
+ Take-no-falldamage: true
