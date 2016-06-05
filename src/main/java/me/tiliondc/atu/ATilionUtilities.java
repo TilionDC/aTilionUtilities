@@ -1,6 +1,7 @@
 package me.tiliondc.atu;
 
 import com.avaje.ebean.EbeanServer;
+import me.tiliondc.atu.Database.SQLiteDB;
 import me.tiliondc.atu.commands.FlyCommand;
 import me.tiliondc.atu.commands.SudoCommand;
 import me.tiliondc.atu.listeners.PathBlockListener;
@@ -12,10 +13,15 @@ import java.io.File;
 
 public class ATilionUtilities extends JavaPlugin {
 
+    SQLiteDB database = null;
+
     @Override
     public void onEnable() {
         super.onEnable();
         createConfig();
+
+        getDB();
+
         if(getConfig().getBoolean("Path.Enabled")) {
             new PathBlockListener(this, (float) getConfig().getDouble("Path.Speed"));
         }
@@ -60,8 +66,13 @@ public class ATilionUtilities extends JavaPlugin {
 
     }
 
-    private void createDatabase() {
 
+    public SQLiteDB getDB() {
+
+        if(database == null) database = new SQLiteDB(this);
+        return database;
     }
+
+
 
 }
