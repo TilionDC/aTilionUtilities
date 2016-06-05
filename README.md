@@ -7,19 +7,19 @@ Any features in this mod can be disabled in the config.
 ## Features:
 
 ### Current Features:
-**Fly** - Do /fly [time] [player name] to fly or disable flying.
-**Sudo** - You can can override anyones chat and make them do commands.
-**Path block** - You walk faster on path blocks
-**Stair Chairs** - You can sit on chairs.
+- **Fly** - Do /fly [time] [player name] to fly or disable flying.
+- **Sudo** - You can can override anyones chat and make them do commands.
+- **Path block** - You walk faster on path blocks
+- **Stair Chairs** - You can sit on chairs.
 
 
 ###  Upcomming features:
-__Kit__ - You can give players the ability to /kit [kit name] as long as they have the atu.kit.[kit name} permission.
-**Locked Chests Signs** - Use signs to lock a chest to you.
-**Elevator Signs** - Use signs to teleport a player up or down.
-**Hat Command** - Use /hat to place the block in your hand as your helmet. Some blocks may have effects...
-**Special items and armor** - Special tools and armor that give special gameplay effects.
-**Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
+- **Kit** - You can give players the ability to /kit [kit name] as long as they have the atu.kit.[kit name} permission.
+- **Locked Chests Signs** - Use signs to lock a chest to you.
+- **Elevator Signs** - Use signs to teleport a player up or down.
+- **Hat Command** - Use /hat to place the block in your hand as your helmet. Some blocks may have effects...
+- **Special items and armor** - Special tools and armor that give special gameplay effects.
+- **Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
 
 
 ###### Config:
