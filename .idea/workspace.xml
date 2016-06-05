@@ -6,12 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="Added /togglechairs command">
+    <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/listeners/PathBlockListener.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/listeners/PathBlockListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/ToggleChairsCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/ToggleChairsCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/PathBlockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/PathBlockListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/StairChairListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/StairChairListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="ATilionUtilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,14 +70,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToggleChairsCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ToggleChairsCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/ToggleChairsCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44460228">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50710225">
+              <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,11 +165,11 @@
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/SudoCommand.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/Database/SQLiteDB.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/StairChairListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/PathBlockListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/ToggleChairsCommand.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -932,7 +941,7 @@
       <workItem from="1464984822688" duration="603000" />
       <workItem from="1464987748923" duration="4348000" />
       <workItem from="1465038033448" duration="12759000" />
-      <workItem from="1465116345782" duration="22565000" />
+      <workItem from="1465116345782" duration="23730000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -952,11 +961,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465143221482</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improved paths">
+      <created>1465158231315</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1465158231315</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59224000" />
+    <option name="totallyTimeSpent" value="60389000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -981,7 +996,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.4857143" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.4857143" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1011,7 +1026,8 @@
     <MESSAGE value="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable." />
     <MESSAGE value="Updated readme and added sqlite support" />
     <MESSAGE value="Added /togglechairs command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added /togglechairs command" />
+    <MESSAGE value="Improved paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved paths" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1365,14 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90340906">
-          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/SudoCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1413,28 +1421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/FlyCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/PathBlockListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1463,13 +1449,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/FlyCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/ToggleChairsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44460228">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50710225">
+          <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+          <folding />
         </state>
       </provider>
     </entry>

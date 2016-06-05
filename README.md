@@ -15,7 +15,11 @@ Any features in this mod can be disabled in the config.
 
 ######  Upcomming features:
     **Kit** - You can give players the ability to /kit [kit name] as long as they have the atu.kit.[kit name} permission.
-    **Locked Chests** - Use signs to lock a chest to you.
+    **Locked Chests Signs** - Use signs to lock a chest to you.
+    **Elevator Signs** - Use signs to teleport a player up or down.
+    **Hat Command** - Use /hat to place the block in your hand as your helmet. Some blocks may have effects...
+    **Special items and armor** - Special tools and armor that give special gameplay effects.
+    **Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
 
 
 ## Config:
