@@ -1,12 +1,11 @@
 package me.tiliondc.atu;
 
-import com.avaje.ebean.EbeanServer;
 import me.tiliondc.atu.Database.SQLiteDB;
 import me.tiliondc.atu.commands.FlyCommand;
 import me.tiliondc.atu.commands.SudoCommand;
+import me.tiliondc.atu.commands.ToggleChairsCommand;
 import me.tiliondc.atu.listeners.PathBlockListener;
 import me.tiliondc.atu.listeners.StairChairListener;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -27,12 +26,12 @@ public class ATilionUtilities extends JavaPlugin {
         }
         if(getConfig().getBoolean("Chair.Enabled")) {
             new StairChairListener(this, (float) getConfig().getDouble("Chair.Distance"),
-                    getConfig().getBoolean("Chair.Require-Signs"), getConfig().getBoolean("Chair.Require-Sneak"));
+                    getConfig().getBoolean("Chair.Require-Signs"), getConfig().getBoolean("Chair.Require-Empty-Hand"));
         }
-
 
         new SudoCommand(this);
         new FlyCommand(this, getConfig().getBoolean("Fly.Take-no-falldamage"));
+        new ToggleChairsCommand(this);
 
     }
 
@@ -66,13 +65,10 @@ public class ATilionUtilities extends JavaPlugin {
 
     }
 
-
     public SQLiteDB getDB() {
 
         if(database == null) database = new SQLiteDB(this);
         return database;
     }
-
-
 
 }
