@@ -1,9 +1,10 @@
 package me.tiliondc.atu;
 
-import me.tiliondc.atu.Database.SQLiteDB;
+import me.tiliondc.atu.database.SQLiteDB;
 import me.tiliondc.atu.commands.FlyCommand;
 import me.tiliondc.atu.commands.SudoCommand;
 import me.tiliondc.atu.commands.ToggleChairsCommand;
+import me.tiliondc.atu.listeners.ElevatorSignListener;
 import me.tiliondc.atu.listeners.PathBlockListener;
 import me.tiliondc.atu.listeners.StairChairListener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -27,6 +28,13 @@ public class ATilionUtilities extends JavaPlugin {
         if(getConfig().getBoolean("Chair.Enabled")) {
             new StairChairListener(this, (float) getConfig().getDouble("Chair.Distance"),
                     getConfig().getBoolean("Chair.Require-Signs"), getConfig().getBoolean("Chair.Require-Empty-Hand"));
+        }
+
+        if(getConfig().getBoolean("Elevator-Signs.Enabled")) {
+            new ElevatorSignListener(this, getConfig().getInt("Elevator-Signs.Maximum-Distance"),
+                    getConfig().getBoolean("Elevator-Signs.Allow-Jump-And-Sneak"),
+                    getConfig().getBoolean("Elevator-Signs.Allow-Redstone"),
+                    getConfig().getInt("Elevator-Signs.Max-Pad-Size"));
         }
 
         new SudoCommand(this);

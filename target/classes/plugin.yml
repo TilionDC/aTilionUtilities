@@ -39,3 +39,5 @@ permissions:
     description: Permission reuqired to run faster on paths.
   atu.chairs:
     description: Permission required to sit and toggle sitting.
+  atu.chestlock:
+    description: Permission to be able to lock chests.

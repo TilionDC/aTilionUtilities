@@ -1,4 +1,4 @@
-package me.tiliondc.atu.Database;
+package me.tiliondc.atu.database;
 
 
 import me.tiliondc.atu.ATilionUtilities;

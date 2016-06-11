@@ -5,6 +5,7 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Arrow;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -65,6 +66,7 @@ public class StairChairListener implements Listener {
 
 
                         Arrow a = l.getWorld().spawnArrow(l.add(0.5, 0, 0.5), l.getDirection(), 0, 0);
+                        e.getPlayer().teleport(a);
                         a.setPassenger(e.getPlayer());
                         e.getPlayer().setSneaking(false);
                     }
@@ -78,6 +80,8 @@ public class StairChairListener implements Listener {
     @EventHandler
     public void playerWantToUnsit(EntityDismountEvent e) {
         if(e.getDismounted() instanceof Arrow) {
+            ((Player) e.getEntity()).setAllowFlight(true);
+            e.getEntity().teleport(e.getDismounted());
             e.getDismounted().remove();
         }
     }

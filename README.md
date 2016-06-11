@@ -30,8 +30,10 @@ Any features in this mod can be disabled in the config.
 - **Show Rules** - Display rules of server with /rules. The rules are defined in a rules.txt
 - **Lightning** - Shoot a lightning bolt at the location you are looking at.
 - **tpa / tph** - Teleport to a player with permission of teleport the player to you.
-- **Remote redstone sign** use signs to use remote redstone.
-
+- **Remote redstone sign** - use signs to setup remote redstone signals.
+- **Linked chests** - Setup a sign on a chest to link it to a "Mother chest".
+- **Black holes** - Terrain generated black holes that will teleport you somewhere else.
+- **Color to text and signs** - write &[hexadecimal code] to get the color of your sign text or chat text.
 
 ###### Config:
     // Version of config. Do NOT change this
