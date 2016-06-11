@@ -1,5 +1,5 @@
 name: ATilionUtilities
-version: 0.0.2
+version: 0.0.4
 description: It adds some extra fun stuff to minecraft
 author: TilionDC
 
@@ -23,6 +23,10 @@ commands:
     description: Enables/Disables flying
     permission: atu.fly
     usage: /fly [time in secounds] [playername]
+  rules:
+    description: Display the server rules.
+    permission: atu.rules
+    usage: /rules [world] to display the rules of the world.
 
 permissions:
   atu.admin:
@@ -41,3 +45,5 @@ permissions:
     description: Permission required to sit and toggle sitting.
   atu.chestlock:
     description: Permission to be able to lock chests.
+  atu.rules:
+    description: Permission to show rules.

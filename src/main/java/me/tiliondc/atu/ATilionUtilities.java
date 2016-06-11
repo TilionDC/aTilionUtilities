@@ -1,9 +1,11 @@
 package me.tiliondc.atu;
 
+import me.tiliondc.atu.commands.RulesCommand;
 import me.tiliondc.atu.database.SQLiteDB;
 import me.tiliondc.atu.commands.FlyCommand;
 import me.tiliondc.atu.commands.SudoCommand;
 import me.tiliondc.atu.commands.ToggleChairsCommand;
+import me.tiliondc.atu.listeners.ChatAndSignColors;
 import me.tiliondc.atu.listeners.ElevatorSignListener;
 import me.tiliondc.atu.listeners.PathBlockListener;
 import me.tiliondc.atu.listeners.StairChairListener;
@@ -36,10 +38,14 @@ public class ATilionUtilities extends JavaPlugin {
                     getConfig().getBoolean("Elevator-Signs.Allow-Redstone"),
                     getConfig().getInt("Elevator-Signs.Max-Pad-Size"));
         }
+        if(getConfig().getBoolean("Chat-Colors.Enabled")) {
+            new ChatAndSignColors(this, getConfig().getString("Chat-Colors.Prefix").charAt(0));
+        }
 
         new SudoCommand(this);
         new FlyCommand(this, getConfig().getBoolean("Fly.Take-no-falldamage"));
         new ToggleChairsCommand(this);
+        new RulesCommand(this);
 
     }
 

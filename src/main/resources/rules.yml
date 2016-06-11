@@ -1,0 +1,19 @@
+# This is the rules config
+# You can have different rules for different worlds
+# Just set the world and then rules as a list
+# Just like this:
+# -
+# global:
+#   - No pvp
+#   - Don't steal
+#   - No griefing
+# -
+# world_nether:
+#   - No destroying spawners
+#   - rule 2 etc
+# -
+# For global rules put
+# global:
+# if the current world doesn't exist it will go to global
+# Do &[1-9 and a-f] to give chatcolors to the rules. The & represents the color prefix
+# -

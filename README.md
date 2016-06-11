@@ -12,6 +12,8 @@ Any features in this mod can be disabled in the config.
 - **Path block** - You walk faster on path blocks
 - **Stair Chairs** - You can sit on chairs.
 - **Elevator Signs** - Use signs to teleport a player up or down.
+- **Color to text and signs** - write &[hexadecimal code] to get the color of your sign text or chat text.
+- **Show Rules** - Display rules of server with /rules. The rules are defined in a rules.txt
 
 ###  Upcomming features:
 - **Kit** - You can give players the ability to /kit [kit name] if they have the atu.kit.[kit name} permission.
@@ -26,55 +28,53 @@ Any features in this mod can be disabled in the config.
 - **Recipe index** - Do /recpie to display an interface of the items recipe.
 - **Nick and reveal command** - do /nick to nick and /reveal to see real name of nick.
 - **Show Inventory** - Show inventory of another player with /inventory [player]
-- **Show Rules** - Display rules of server with /rules. The rules are defined in a rules.txt
 - **Lightning** - Shoot a lightning bolt at the location you are looking at.
 - **tpa / tph** - Teleport to a player with permission of teleport the player to you.
 - **Remote redstone sign** - use signs to setup remote redstone signals.
 - **Linked chests** - Setup a sign on a chest to link it to a "Mother chest".
 - **Black holes** - Terrain generated black holes that will teleport you somewhere else.
-- **Color to text and signs** - write &[hexadecimal code] to get the color of your sign text or chat text.
 
-###### Config:
-# ---------------------------------------------------------------------
-# A Tilion Commands Configuration file
-#
-#
-# Author TilionDC
-# @ tiliondc@gmail.com
-#
-#
-# --------------------------------------------------------------------
-#
-# Materials can be found at:
-# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-#
 
-# Version of config. Do NOT change this
-Version: 0.0.3
-
-# Path Config
-Path:
-  # Enable or disable this feature. Must be either true or false.
-  Enabled: true
-  # Speed between 0 and 1.
-  # 0.2 is minecraft walk speed. 0.3 is config default
-  Speed: 0.3
-
-# Stair Chairs Config
-Chair:
- # Encable or disable this feature. Must be either true or false.
- Enabled: true
- # Maximum distance you can be from the stair block
- # Default config value is 2.5
- Distance: 2.5
- # Do you require signs on both sides of the stair?
- # Default config value is false. Can only be true or false.
- Require-Signs: false
- # Do you require to have nothing in your hand when you are trying to sit?
- # Default config values is true. Can only be true or false.
- Require-empty-hand: true
-
-# Fly command config
+    # ---------------------------------------------------------------------
+    # A Tilion Commands Configuration file
+    #
+    #
+    # Author TilionDC
+    # @ tiliondc@gmail.com
+    #
+    #
+    # --------------------------------------------------------------------
+    #
+    # Materials can be found at:
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    #
+    
+    # Version of config. Do NOT change this
+    Version: 0.0.4
+    
+    # Path Config
+    Path:
+      # Enable or disable this feature. Must be either true or false.
+      Enabled: true
+      # Speed between 0 and 1.
+      # 0.2 is minecraft walk speed. 0.3 is config default
+      Speed: 0.3
+    
+    # Stair Chairs Config
+    Chair:
+     # Encable or disable this feature. Must be either true or false.
+     Enabled: true
+     # Maximum distance you can be from the stair block
+     # Default config value is 2.5
+     Distance: 2.5
+     # Do you require signs on both sides of the stair?
+     # Default config value is false. Can only be true or false.
+     Require-Signs: false
+     # Do you require to have nothing in your hand when you are trying to sit?
+     # Default config values is true. Can only be true or false.
+     Require-empty-hand: true
+    
+    # Fly command config
     Fly:
      # Encable or disable this feature. Must be either true or false.
      Enabled: true
@@ -110,4 +110,10 @@ Chair:
       # The maximum pad size for redstone pads. This is in radius of the pad.
       # Default config value is 4. Takes an integer between 1 and 15.
       Max-Pad-Size: 4
-
+    
+    # ChatColors config
+    Chat-Colors:
+      # Encable or disable this feature. Must be either true or false.
+      Enabled: true
+      # Chat color prefix. Has to be single char within single quotes. Default is '&'
+      Prefix: '&'

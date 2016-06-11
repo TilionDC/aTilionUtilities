@@ -52,7 +52,8 @@
                     <include>plugin.yml</include>
                     <include>config.yml</include>
                     <include>kits.yml</include>
-                    <include>motd.txt</include>
+                    <include>motd.yml</include>
+                    <include>rules.yml</include>
                 </includes>
             </resource>
         </resources>

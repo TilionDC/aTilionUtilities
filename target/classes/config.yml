@@ -13,7 +13,7 @@
 #
 
 # Version of config. Do NOT change this
-Version: 0.0.3
+Version: 0.0.4
 
 # Path Config
 Path:
@@ -73,3 +73,10 @@ Elevator-Signs:
   # The maximum pad size for redstone pads. This is in radius of the pad.
   # Default config value is 4. Takes an integer between 1 and 15.
   Max-Pad-Size: 4
+
+# ChatColors config
+Chat-Colors:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+  # Chat color prefix. Has to be single char within single quotes. Default is '&'
+  Prefix: '&'
