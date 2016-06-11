@@ -27,6 +27,10 @@ commands:
     description: Display the server rules.
     permission: atu.rules
     usage: /rules [world] to display the rules of the world.
+  hat:
+    desciption: Set block in hand as a hat on the head.
+    permission: atu.hat
+    usage: /hat to put the block in hand as a hat.
 
 permissions:
   atu.admin:

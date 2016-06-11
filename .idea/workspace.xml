@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/plugin.yml" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" />
     </list>
     <ignored path="ATilionUtilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +62,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.23574731">
-                <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="-0.26194146">
+                <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -988,7 +988,7 @@
       <workItem from="1465463260469" duration="17670000" />
       <workItem from="1465591506465" duration="9093000" />
       <workItem from="1465639532687" duration="16708000" />
-      <workItem from="1465663067933" duration="6692000" />
+      <workItem from="1465663067933" duration="6820000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -1080,11 +1080,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465670722184</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added hats and fixed a deprecated method problem in stairchairlistener">
+      <created>1465670772171</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1465670772171</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160481000" />
+    <option name="totallyTimeSpent" value="160609000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1586,8 +1592,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.23574731">
-            <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <first_editor vertical-scroll-proportion="-0.26194146">
+            <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />
