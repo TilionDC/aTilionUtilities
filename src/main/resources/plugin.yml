@@ -31,6 +31,10 @@ commands:
     desciption: Set block in hand as a hat on the head.
     permission: atu.hat
     usage: /hat to put the block in hand as a hat.
+  kit:
+    description: Gives a player the desired kit
+    permission: atu.kit
+    usage: /kit [kitname] to get the kit or only /kit to see the available kits.
 
 permissions:
   atu.admin:

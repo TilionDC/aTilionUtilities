@@ -45,6 +45,7 @@ public class ATilionUtilities extends JavaPlugin {
         new ToggleChairsCommand(this);
         new RulesCommand(this);
         new HatCommand(this);
+        new KitCommand(this);
 
     }
 

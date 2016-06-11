@@ -4,35 +4,35 @@
 # But also do commands that the player has no permission for
 # Just remember that they are run from the console side so if they
 # can't be run from the console it wont work.
-#
+# -
 # Tips and info:
-#
+# -
 # You can run a command from the players side with the use of the command 'sudo [player] [command]'
 # use '@p' to access the player that executed the kit command
-#
+# -
 # Don't forget to put either "" quotes or '' single quotes around the text. Otherwise it wont work.
-#
+# -
 # You can set a cool down in secounds with Cooldown: (integer)
-#
+# -
 # To set a cost for the kit you can specify the cost with Cost: '[Material] [Amount]'
-#
+# -
 # The Material is the bukkit material. You can find the names here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-#
+# -
 # The amount has to be between 1 and 64.
-#
+# -
 # If money is supported you can just write Cost '[Amount]'
 # If you want no cost then just put Cost: ''
 # If you want no cooldown then put Cooldown: 0
-#
+# -
 # Examples:
-#
+# -
 # Give the player some stone
 # stone:
 #   Cooldown: 0
 #   Cost: '5'
 #   Commands:
 #     - 'give @p stone 64'
-#
+# -
 # Make the player go home and say I have gone home with a cooldown of 30 secounds. And a cost of
 # GoHome:
 #   Cooldown: 30
@@ -40,3 +40,4 @@
 #   Commands:
 #     - 'sudo @p I have gone home'
 #     - 'sudo @p /home'
+# -

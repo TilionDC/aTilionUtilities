@@ -1,6 +1,6 @@
 # aTilionUtilities
 
-### Version: 0.0.5
+### Version: 0.0.6
 
 The purpose of this plugin is to add some extra functionality and fun features to your minecraft server.
 This is a utilitiy plugin and has some of the features essentials have. But it is not created to take essentials place.
@@ -16,15 +16,14 @@ Any features in this mod can be disabled in the config.
 - **Elevator Signs** - Use signs to teleport a player up or down.
 - **Color to text and signs** - write &[hexadecimal code] to get the color of your sign text or chat text.
 - **Show Rules** - Display rules of server with /rules. The rules are defined in a rules.txt
+- **Hat Command** - Use /hat to place the block in your hand as your helmet. Some blocks may have effects...
+- **Kit** - You can give players the ability to /kit [kit name] if they have the atu.kit.[kit name} permission.
 
 ###  Upcomming features:
-- **Kit** - You can give players the ability to /kit [kit name] if they have the atu.kit.[kit name} permission.
 - **Locked Chests Signs** - Use signs to lock a chest to you.
-- **Hat Command** - Use /hat to place the block in your hand as your helmet. Some blocks may have effects...
 - **Special items and armor** - Special tools and armor that give special gameplay effects.
 - **Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
-- **Heal command** - Heal yoursel or a player with /heal [hearts] [player]
-- **Feed command** - Feed yourself or a player with /feed [chickenlegs] [player]
+- **Heal & Feed command** - Heal yoursel or a player with /heal [hearts] [player] or /feed command to feed.
 - **Welcome message** - Display a welcome/login message with boss bar.
 - **Reply to /tell** - Reply to tell command with . (dot) before the message. Ex: .Hello Player
 - **Recipe index** - Do /recpie to display an interface of the items recipe.
@@ -35,6 +34,8 @@ Any features in this mod can be disabled in the config.
 - **Remote redstone sign** - use signs to setup remote redstone signals.
 - **Linked chests** - Setup a sign on a chest to link it to a "Mother chest".
 - **Black holes** - Terrain generated black holes that will teleport you somewhere else.
+
+## Config:
 
 ```
 # ---------------------------------------------------------------------
@@ -52,7 +53,7 @@ Any features in this mod can be disabled in the config.
 #
 
 # Version of config. Do NOT change this
-Version: 0.0.4
+Version: 0.0.5
 
 # Path Config
 Path:
@@ -119,4 +120,24 @@ Chat-Colors:
   Enabled: true
   # Chat color prefix. Has to be single char within single quotes. Default is '&'
   Prefix: '&'
+
+# Hats Config
+Hats:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Sudo config
+Sudo:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Rules command config
+Rules:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Kit Command config
+Kit:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
 ```
