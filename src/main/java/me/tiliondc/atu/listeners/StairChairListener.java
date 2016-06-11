@@ -57,9 +57,8 @@ public class StairChairListener implements Listener {
 
                         if (e.getPlayer().isSneaking()) return;
                         if (requireEmptyHand) {
-                            //@TODO fix this later. Using a deprecated method
                             //noinspection deprecation
-                            ItemStack item = e.getPlayer().getItemInHand();
+                            ItemStack item = e.getPlayer().getInventory().getItemInMainHand();
                             if (item.getType() != Material.AIR) return;
 
                         }

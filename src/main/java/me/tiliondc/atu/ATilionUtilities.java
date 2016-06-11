@@ -1,10 +1,7 @@
 package me.tiliondc.atu;
 
-import me.tiliondc.atu.commands.RulesCommand;
+import me.tiliondc.atu.commands.*;
 import me.tiliondc.atu.database.SQLiteDB;
-import me.tiliondc.atu.commands.FlyCommand;
-import me.tiliondc.atu.commands.SudoCommand;
-import me.tiliondc.atu.commands.ToggleChairsCommand;
 import me.tiliondc.atu.listeners.ChatAndSignColors;
 import me.tiliondc.atu.listeners.ElevatorSignListener;
 import me.tiliondc.atu.listeners.PathBlockListener;
@@ -47,6 +44,7 @@ public class ATilionUtilities extends JavaPlugin {
         new FlyCommand(this, getConfig().getBoolean("Fly.Take-no-falldamage"));
         new ToggleChairsCommand(this);
         new RulesCommand(this);
+        new HatCommand(this);
 
     }
 
