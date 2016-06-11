@@ -6,13 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="Added hats">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/HatCommand.java" />
+    <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/StairChairListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/StairChairListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="ATilionUtilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,15 +55,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.94298923">
-                <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="0.23574731">
+                <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -108,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.024147727">
+            <state vertical-scroll-proportion="0.0">
               <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
               <folding />
             </state>
@@ -196,13 +193,13 @@
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/FlyCommand.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/RulesCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/rules.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/StairChairListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/HatCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -991,7 +988,7 @@
       <workItem from="1465463260469" duration="17670000" />
       <workItem from="1465591506465" duration="9093000" />
       <workItem from="1465639532687" duration="16708000" />
-      <workItem from="1465663067933" duration="6613000" />
+      <workItem from="1465663067933" duration="6692000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -1077,11 +1074,17 @@
       <option name="project" value="LOCAL" />
       <updated>1465670007407</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added hats and fixed a deprecated method problem in stairchairlistener">
+      <created>1465670722184</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1465670722184</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160402000" />
+    <option name="totallyTimeSpent" value="160481000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1146,7 +1149,8 @@
     <MESSAGE value="Updated the readme" />
     <MESSAGE value="Updated from 0.02 to 0.0.4 Added a set of features like Color to text and Show rules." />
     <MESSAGE value="Fixed a config and rules bug where the files were being reloaded to default on every reload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a config and rules bug where the files were being reloaded to default on every reload" />
+    <MESSAGE value="Added hats and fixed a deprecated method problem in stairchairlistener" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added hats and fixed a deprecated method problem in stairchairlistener" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1526,26 +1530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.94298923">
-            <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/StairChairListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1584,9 +1568,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024147727">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.23574731">
+            <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
