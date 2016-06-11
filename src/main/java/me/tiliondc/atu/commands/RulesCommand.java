@@ -26,18 +26,10 @@ public class RulesCommand implements CommandExecutor {
 
         plugin.getCommand("rules").setExecutor(this);
 
-        File file = new File(plugin.getDataFolder(), "rules.yml");
-        if(!file.exists()) createRulesFile();
-        InputStream rules = plugin.getResource("rules.yml");
-        if(rules == null) return;
+        File file = createRulesFile();
 
-        //noinspection deprecation
-        config = YamlConfiguration.loadConfiguration(rules);
-        try {
-            config.save(file);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        config = YamlConfiguration.loadConfiguration(file);
+
     }
 
     @Override
@@ -74,7 +66,7 @@ public class RulesCommand implements CommandExecutor {
         return true;
     }
 
-    private void createRulesFile() {
+    private File createRulesFile() {
         try {
             if (!plugin.getDataFolder().exists()) {
                 //noinspection ResultOfMethodCallIgnored
@@ -83,11 +75,23 @@ public class RulesCommand implements CommandExecutor {
             File file = new File(plugin.getDataFolder(), "rules.yml");
             if (!file.exists()) {
                 plugin.getLogger().info("rules.yml not found, creating!");
+                InputStream rules = plugin.getResource("rules.yml");
+                if(rules == null) return file;
+
+                //noinspection deprecation
+                config = YamlConfiguration.loadConfiguration(rules);
+                try {
+                    config.save(file);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
 
         }
+
+        return new File(plugin.getDataFolder(), "rules.yml");
 
     }
 }

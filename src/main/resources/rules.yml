@@ -4,16 +4,18 @@
 # Just like this:
 # -
 # global:
-#   - No pvp
-#   - Don't steal
-#   - No griefing
+#   - "No pvp"
+#   - "Don't steal"
+#   - "No griefing"
 # -
 # world_nether:
-#   - No destroying spawners
-#   - rule 2 etc
+#   - "No destroying spawners"
+#   - "rule 2 etc"
 # -
 # For global rules put
 # global:
 # if the current world doesn't exist it will go to global
 # Do &[1-9 and a-f] to give chatcolors to the rules. The & represents the color prefix
+# -
+# Remember the quotes. Or it wont show anything. ("[text]")
 # -

@@ -9,6 +9,7 @@ import me.tiliondc.atu.listeners.ChatAndSignColors;
 import me.tiliondc.atu.listeners.ElevatorSignListener;
 import me.tiliondc.atu.listeners.PathBlockListener;
 import me.tiliondc.atu.listeners.StairChairListener;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -65,7 +66,10 @@ public class ATilionUtilities extends JavaPlugin {
                 getLogger().info("Config.yml not found, creating!");
                 saveDefaultConfig();
             } else {
-                if(!getConfig().getString("Version").equals(getDescription().getVersion()) || getConfig().getString("Version") == null) {
+                @SuppressWarnings("deprecation")
+                String version = YamlConfiguration.loadConfiguration(getResource("config.yml")).getString("Version");
+                if(version == null) version = "ERROR";
+                if(!getConfig().getString("Version").equals(version) || getConfig().getString("Version") == null) {
                     //noinspection ResultOfMethodCallIgnored
                     file.delete();
                     saveDefaultConfig();
