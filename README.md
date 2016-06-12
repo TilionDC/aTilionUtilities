@@ -18,13 +18,13 @@ Any features in this mod can be disabled in the config.
 - **Show Rules** - Display rules of server with /rules. The rules are defined in a rules.txt
 - **Hat Command** - Use /hat to place the block in your hand as your helmet. Some blocks may have effects...
 - **Kit** - You can give players the ability to /kit [kit name] if they have the atu.kit.[kit name} permission.
+- **Heal command** - Heal yoursel or a player with /heal [hearts] [player] *Contains Easter egg*
+- **Feed command** - Feed yourself or a player with /feed [chickenlegs] [player]
 
 ###  Upcomming features:
 - **Locked Chests Signs** - Use signs to lock a chest to you.
 - **Special items and armor** - Special tools and armor that give special gameplay effects.
 - **Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
-- **Heal command** - Heal yoursel or a player with /heal [hearts] [player]
-- **Feed command** - Feed yourself or a player with /feed [chickenlegs] [player]
 - **Welcome message** - Display a welcome/login message with boss bar.
 - **Reply to /tell** - Reply to tell command with . (dot) before the message. Ex: .Hello Player
 - **Recipe index** - Do /recpie to display an interface of the items recipe.
