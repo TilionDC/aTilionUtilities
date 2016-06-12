@@ -13,7 +13,7 @@
 #
 
 # Version of config. Do NOT change this
-Version: 0.0.5
+Version: 0.0.6
 
 # Path Config
 Path:
@@ -98,5 +98,15 @@ Rules:
 
 # Kit Command config
 Kit:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Heal command config
+Heal:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Feed command config
+Feed:
   # Encable or disable this feature. Must be either true or false.
   Enabled: true

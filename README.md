@@ -1,6 +1,6 @@
 # aTilionUtilities
 
-### Version: 0.0.6
+### Version: 0.0.7
 
 The purpose of this plugin is to add some extra functionality and fun features to your minecraft server.
 This is a utilitiy plugin and has some of the features essentials have. But it is not created to take essentials place.
@@ -23,7 +23,8 @@ Any features in this mod can be disabled in the config.
 - **Locked Chests Signs** - Use signs to lock a chest to you.
 - **Special items and armor** - Special tools and armor that give special gameplay effects.
 - **Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
-- **Heal & Feed command** - Heal yoursel or a player with /heal [hearts] [player] or /feed command to feed.
+- **Heal command** - Heal yoursel or a player with /heal [hearts] [player]
+- **Feed command** - Feed yourself or a player with /feed [chickenlegs] [player]
 - **Welcome message** - Display a welcome/login message with boss bar.
 - **Reply to /tell** - Reply to tell command with . (dot) before the message. Ex: .Hello Player
 - **Recipe index** - Do /recpie to display an interface of the items recipe.

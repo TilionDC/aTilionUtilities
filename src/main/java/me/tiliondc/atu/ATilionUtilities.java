@@ -7,6 +7,7 @@ import me.tiliondc.atu.listeners.ElevatorSignListener;
 import me.tiliondc.atu.listeners.PathBlockListener;
 import me.tiliondc.atu.listeners.StairChairListener;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -46,6 +47,9 @@ public class ATilionUtilities extends JavaPlugin {
         new RulesCommand(this);
         new HatCommand(this);
         new KitCommand(this);
+        new HealCommand(this);
+        new FeedCommand(this);
+
 
     }
 

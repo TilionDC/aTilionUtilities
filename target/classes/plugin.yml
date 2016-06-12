@@ -1,5 +1,5 @@
 name: ATilionUtilities
-version: 0.0.4
+version: 0.0.7
 description: It adds some extra fun stuff to minecraft
 author: TilionDC
 
@@ -31,6 +31,18 @@ commands:
     desciption: Set block in hand as a hat on the head.
     permission: atu.hat
     usage: /hat to put the block in hand as a hat.
+  kit:
+    description: Gives a player the desired kit
+    permission: atu.kit
+    usage: /kit [kitname] to get the kit or only /kit to see the available kits.
+  heal:
+    description: Heals a player an given amount of health
+    permission: atu.heal
+    usage: /heal {player] [amount] to heal a player.
+  feed:
+    description: Feeds a player an given amount of hunger
+    permission: atu.feed
+    usage: /feed {player] [amount] to feed a player.
 
 permissions:
   atu.admin:
@@ -51,3 +63,7 @@ permissions:
     description: Permission to be able to lock chests.
   atu.rules:
     description: Permission to show rules.
+  atu.heal:
+    description: Permission to heal player.
+  atu.feed:
+    description: Permission to feed player.

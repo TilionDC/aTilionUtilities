@@ -13,7 +13,7 @@
 #
 
 # Version of config. Do NOT change this
-Version: 0.0.4
+Version: 0.0.6
 
 # Path Config
 Path:
@@ -80,3 +80,33 @@ Chat-Colors:
   Enabled: true
   # Chat color prefix. Has to be single char within single quotes. Default is '&'
   Prefix: '&'
+
+# Hats Config
+Hats:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Sudo config
+Sudo:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Rules command config
+Rules:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Kit Command config
+Kit:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Heal command config
+Heal:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Feed command config
+Feed:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
