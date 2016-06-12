@@ -23,18 +23,16 @@ public class PathBlockListener implements Listener {
 
     @EventHandler
     public void playerWalk(PlayerMoveEvent e) {
+        if(!e.getPlayer().hasPermission("atu.pathblock")) return;
 
-        if(e.getPlayer().hasPermission("atu.pathrun")) {
+        Location from = e.getFrom().clone();
+        while(from.getBlock().getType() == Material.AIR) from.setY(from.getY() - 1);
 
-            Location from = e.getFrom().clone();
-            while(from.getBlock().getType() == Material.AIR) from.setY(from.getY() - 1);
-
-            if(from.getBlock().getType() == Material.GRASS_PATH) {
-                e.getPlayer().setWalkSpeed(speed);
-            } else {
-                // TODO: 16/06/03 Figure out a way to somehow change the value to twise of what the previous run speed was. Maybe use player metadata?
-                e.getPlayer().setWalkSpeed(0.2f);
-            }
+        if(from.getBlock().getType() == Material.GRASS_PATH) {
+            e.getPlayer().setWalkSpeed(speed);
+        } else {
+            // TODO: 16/06/03 Figure out a way to somehow change the value to twise of what the previous run speed was. Maybe use player metadata?
+            e.getPlayer().setWalkSpeed(0.2f);
         }
     }
 

@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.util.Map;
 
 public class ATilionUtilities extends JavaPlugin {
 
@@ -29,6 +30,7 @@ public class ATilionUtilities extends JavaPlugin {
         if(getConfig().getBoolean("Chair.Enabled")) {
             new StairChairListener(this, (float) getConfig().getDouble("Chair.Distance"),
                     getConfig().getBoolean("Chair.Require-Signs"), getConfig().getBoolean("Chair.Require-Empty-Hand"));
+            new ToggleChairsCommand(this);
         }
 
         if(getConfig().getBoolean("Elevator-Signs.Enabled")) {
@@ -41,14 +43,27 @@ public class ATilionUtilities extends JavaPlugin {
             new ChatAndSignColors(this, getConfig().getString("Chat-Colors.Prefix").charAt(0));
         }
 
-        new SudoCommand(this);
-        new FlyCommand(this, getConfig().getBoolean("Fly.Take-no-falldamage"));
-        new ToggleChairsCommand(this);
-        new RulesCommand(this);
-        new HatCommand(this);
-        new KitCommand(this);
-        new HealCommand(this);
-        new FeedCommand(this);
+        if(getConfig().getBoolean("Sudo.Enabled")) {
+            new SudoCommand(this);
+        }
+        if(getConfig().getBoolean("Fly.Enabled")) {
+            new FlyCommand(this, getConfig().getBoolean("Fly.Take-no-falldamage"));
+        }
+        if(getConfig().getBoolean("Rules.Enabled")) {
+            new RulesCommand(this);
+        }
+        if(getConfig().getBoolean("Hats.Enabled")) {
+            new HatCommand(this);
+        }
+        if(getConfig().getBoolean("Kit.Enabled")) {
+            new KitCommand(this);
+        }
+        if(getConfig().getBoolean("Heal.Enabled")) {
+            new HealCommand(this);
+        }
+        if(getConfig().getBoolean("Feed.Enabled")) {
+            new FeedCommand(this);
+        }
 
 
     }
@@ -73,6 +88,8 @@ public class ATilionUtilities extends JavaPlugin {
                 String version = YamlConfiguration.loadConfiguration(getResource("config.yml")).getString("Version");
                 if(version == null) version = "ERROR";
                 if(!getConfig().getString("Version").equals(version) || getConfig().getString("Version") == null) {
+                    getConfig().save(getDataFolder() + "/old-config-" + getConfig().getString("Version") + ".yml");
+
                     //noinspection ResultOfMethodCallIgnored
                     file.delete();
                     saveDefaultConfig();

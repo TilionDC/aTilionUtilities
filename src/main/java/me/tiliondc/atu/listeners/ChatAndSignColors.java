@@ -22,6 +22,7 @@ public class ChatAndSignColors implements Listener {
 
     @EventHandler
     public void chatStuff(AsyncPlayerChatEvent e) {
+        if(!e.getPlayer().hasPermission("atu.chatcolors")) return;
         e.setMessage(e.getMessage().replace(prefix, ChatColor.COLOR_CHAR).
                 replace(ChatColor.COLOR_CHAR + " ", prefix + " "));
 
@@ -29,6 +30,7 @@ public class ChatAndSignColors implements Listener {
 
     @EventHandler
     public void signStuff(SignChangeEvent e ) {
+        if(!e.getPlayer().hasPermission("atu.chatcolors")) return;
         for(int i = 0; i < e.getLines().length; i++) {
             e.setLine(i, e.getLine(i).replace(prefix, ChatColor.COLOR_CHAR).
                     replace(ChatColor.COLOR_CHAR + " ", prefix + " "));

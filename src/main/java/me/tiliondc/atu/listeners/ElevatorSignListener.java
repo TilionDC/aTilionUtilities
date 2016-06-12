@@ -1,7 +1,6 @@
 package me.tiliondc.atu.listeners;
 
 import me.tiliondc.atu.ATilionUtilities;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -44,6 +43,7 @@ public class ElevatorSignListener implements Listener{
     public void playerChangeSign(SignChangeEvent e) {
 
         if(e.getLine(0).equalsIgnoreCase("[ELEVATOR]")) {
+            if(!e.getPlayer().hasPermission("atu.elevators")) return;
 
             e.setLine(0, "[ELEVATOR]");
             Location loc = new Location(e.getBlock().getWorld(), e.getBlock().getX(), e.getBlock().getY() - 1, e.getBlock().getZ());
@@ -178,6 +178,7 @@ public class ElevatorSignListener implements Listener{
             if(e.getFrom().getY() < e.getTo().getY()) {
                 if (new Location(e.getFrom().getWorld(), e.getFrom().getX(), e.getFrom().getY() + 1, e.getFrom().getZ())
                         .getBlock().getType().equals(Material.WALL_SIGN)) {
+                    if(!e.getPlayer().hasPermission("atu.elevators")) return;
                     Sign sign = (Sign) new Location(e.getFrom().getWorld(), e.getFrom().getX(),
                             e.getFrom().getY() + 1, e.getFrom().getZ()).getBlock().getState();
                     if(sign.getLine(0).equals(ChatColor.BLUE + "[ELEVATOR]")) {
@@ -205,6 +206,7 @@ public class ElevatorSignListener implements Listener{
 
     @EventHandler
     public void playerSneakEvent(PlayerToggleSneakEvent e) {
+        if(!e.getPlayer().hasPermission("atu.elevators")) return;
 
         if(allowJumpAndSneak) {
             if (new Location(e.getPlayer().getWorld(), e.getPlayer().getLocation().getX(), e.getPlayer().getLocation()
@@ -288,7 +290,6 @@ public class ElevatorSignListener implements Listener{
 
     @EventHandler
     public void redstoneEvent(BlockRedstoneEvent e ) {
-
 
         if(allowRedstone) {
             BlockFace[] faces = {BlockFace.DOWN, BlockFace.EAST, BlockFace.NORTH, BlockFace.SOUTH, BlockFace.UP, BlockFace.WEST};

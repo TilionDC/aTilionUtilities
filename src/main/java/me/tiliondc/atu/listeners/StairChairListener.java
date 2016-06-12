@@ -37,6 +37,7 @@ public class StairChairListener implements Listener {
         if(e.getAction() == Action.RIGHT_CLICK_BLOCK && e.getClickedBlock() != null) {
             if(e.getClickedBlock().getType().toString().toLowerCase().contains("stairs")) {
                 if (e.getPlayer().getLocation().distance(e.getClickedBlock().getLocation()) < distance) {
+                    if(!e.getPlayer().hasPermission("atu.chairs")) return;
 
                     if(!e.getPlayer().hasMetadata("USE_CHAIRS"))
                         e.getPlayer().setMetadata("USE_CHAIRS", new FixedMetadataValue(plugin, true));

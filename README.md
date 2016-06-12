@@ -1,6 +1,6 @@
 # aTilionUtilities
 
-### Version: 0.0.7
+### Version: 0.1
 
 The purpose of this plugin is to add some extra functionality and fun features to your minecraft server.
 This is a utilitiy plugin and has some of the features essentials have. But it is not created to take essentials place.
@@ -18,8 +18,8 @@ Any features in this mod can be disabled in the config.
 - **Show Rules** - Display rules of server with /rules. The rules are defined in a rules.txt
 - **Hat Command** - Use /hat to place the block in your hand as your helmet. Some blocks may have effects...
 - **Kit** - You can give players the ability to /kit [kit name] if they have the atu.kit.[kit name} permission.
-- **Heal command** - Heal yoursel or a player with /heal [hearts] [player] *Contains Easter egg*
-- **Feed command** - Feed yourself or a player with /feed [chickenlegs] [player]
+- **Heal command** - Heal yoursel or a player with /heal [player] [hearts] *Contains Easter egg*
+- **Feed command** - Feed yourself or a player with /feed [player] [chickenlegs]
 
 ###  Upcomming features:
 - **Locked Chests Signs** - Use signs to lock a chest to you.
@@ -36,7 +36,82 @@ Any features in this mod can be disabled in the config.
 - **Linked chests** - Setup a sign on a chest to link it to a "Mother chest".
 - **Black holes** - Terrain generated black holes that will teleport you somewhere else.
 
-## Config:
+## Commands: 
+
+```
+  atu:
+    desciption: General atilionUtilities command
+    permission: atu.admin
+    usage: Error, do '/atu help'
+  sudo:
+    description: Make a player do a command
+    permission: atu.sudo
+    usage: /sudo [player] [command]
+  togglechairs:
+    description: Toggles if you want to sit on stairs or not
+    permission: atu.chairs
+    usage: /togglechairs to toggle if you want to sit on stairs or not.
+  fly:
+    description: Enables/Disables flying
+    permission: atu.fly
+    usage: /fly [time in secounds] [playername]
+  rules:
+    description: Display the server rules.
+    permission: atu.rules
+    usage: /rules [world] to display the rules of the world.
+  hat:
+    desciption: Set block in hand as a hat on the head.
+    permission: atu.hat
+    usage: /hat to put the block in hand as a hat.
+  kit:
+    description: Gives a player the desired kit
+    permission: atu.kit
+    usage: /kit [kitname] to get the kit or only /kit to see the available kits.
+  heal:
+    description: Heals a player an given amount of health
+    permission: atu.heal
+    usage: /heal {player] [amount] to heal a player.
+  feed:
+    description: Feeds a player an given amount of hunger
+    permission: atu.feed
+    usage: /feed {player] [amount] to feed a player.
+```
+
+
+## Permissions:
+
+```
+  atu.admin:
+    description: Permission for admin stuff
+  atu.sudo:
+    description: Permission for the sudo command. Should not be given to anyone.
+  atu.kit:
+    description: Permission for giving any kit to anyone. atu.kit.[kitname] for specific kits.
+  atu.fly:
+    description: Permission for being able to fly in survival mode.
+  atu.fly.others:
+    description: Permission for giving others the fly command.
+  atu.chairs:
+    description: Permission required to sit and toggle sitting.
+  atu.chestlock:
+    description: Permission to be able to lock chests.
+  atu.rules:
+    description: Permission to see the rules.
+  atu.hat:
+    description: Permission for using hats.
+  atu.heal:
+    description: Permission to heal player.
+  atu.feed:
+    description: Permission to feed player.
+  atu.chatcolors:
+    description: Permission for writng in chat and on signs with color.
+  atu.pathblock:
+    description: Permission for walking faster on paths.
+  atu.elevators:
+    description: Permissoin to use elevators.
+```
+
+## Config
 
 ```
 # ---------------------------------------------------------------------
@@ -52,9 +127,12 @@ Any features in this mod can be disabled in the config.
 # Materials can be found at:
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 #
+# When You update the plugin the config file updates automaticly.
+# All your saved values should be saved to the new config file
+#
 
 # Version of config. Do NOT change this
-Version: 0.0.5
+Version: 0.1.0
 
 # Path Config
 Path:
@@ -139,6 +217,16 @@ Rules:
 
 # Kit Command config
 Kit:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Heal command config
+Heal:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Feed command config
+Feed:
   # Encable or disable this feature. Must be either true or false.
   Enabled: true
 ```

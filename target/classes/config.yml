@@ -1,4 +1,4 @@
-# ---------------------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # A Tilion Commands Configuration file
 #
 #
@@ -6,14 +6,16 @@
 # @ tiliondc@gmail.com
 #
 #
-# --------------------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 #
 # Materials can be found at:
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 #
-
+# REMEMBER: When you update the plugin your configuration will update autmaticly which may result in a total
+# reset of your configuration. Be careful and make sure to always have a backup.
+#
 # Version of config. Do NOT change this
-Version: 0.0.6
+Version: 0.1.0
 
 # Path Config
 Path:
