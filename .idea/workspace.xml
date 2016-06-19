@@ -8,11 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/plugin.yml" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.yml" afterPath="$PROJECT_DIR$/target/classes/config.yml" />
     </list>
     <ignored path="ATilionUtilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChestLockListener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChestLockListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.14427157">
+              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.024045262">
+            <state vertical-scroll-proportion="0.0">
               <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
               <folding />
             </state>
@@ -202,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ElevatorSignListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" />
       </list>
     </option>
   </component>
@@ -973,7 +970,7 @@
       <workItem from="1465846715867" duration="2006000" />
       <workItem from="1465988120728" duration="4784000" />
       <workItem from="1466179671330" duration="39151000" />
-      <workItem from="1466300102617" duration="45000" />
+      <workItem from="1466300102617" duration="746000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -1107,11 +1104,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466299972671</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Changed my mind. new version will be 0.2.0">
+      <created>1466300180289</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1466300180289</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225383000" />
+    <option name="totallyTimeSpent" value="226084000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1128,9 +1131,9 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2230444" sideWeight="0.15416667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.15208334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.84583336" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.84791666" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1182,7 +1185,8 @@
     <MESSAGE value="Updated readme" />
     <MESSAGE value="Changed the config to save the old version when updating to a newer version." />
     <MESSAGE value="Updated README&#10;Added chest locking system&#10;Added sign changing command&#10;Upadted config version&#10;Updated plugin version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README&#10;Added chest locking system&#10;Added sign changing command&#10;Upadted config version&#10;Updated plugin version" />
+    <MESSAGE value="Changed my mind. new version will be 0.2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed my mind. new version will be 0.2.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1549,16 +1553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1613,9 +1607,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024045262">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14427157">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

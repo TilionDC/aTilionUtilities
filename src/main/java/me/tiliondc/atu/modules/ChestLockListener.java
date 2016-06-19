@@ -36,9 +36,6 @@ public class ChestLockListener implements Listener{
 
         if(!e.getPlayer().hasPermission("atu.chestlock")) return;
 
-        if(!e.getLine(1).equalsIgnoreCase(ChatColor.DARK_GRAY +
-                e.getPlayer().getName().toLowerCase())) e.setCancelled(true);
-
         Block b = e.getBlock();
         Set<Sign> signs = findAttachedSigns(b);
         Block c = null;
