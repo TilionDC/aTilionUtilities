@@ -1,7 +1,6 @@
 package me.tiliondc.atu.modules;
 
 import me.tiliondc.atu.ATilionUtilities;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Sign;

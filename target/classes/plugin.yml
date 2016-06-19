@@ -1,5 +1,5 @@
 name: ATilionUtilities
-version: 0.1
+version: 0.2.0
 description: It adds some extra fun stuff to minecraft
 author: TilionDC
 
@@ -43,6 +43,10 @@ commands:
     description: Feeds a player an given amount of hunger
     permission: atu.feed
     usage: /feed {player] [amount] to feed a player.
+  signedit:
+    description: Allows a player to edit the sign looked at by the player.
+    permission: atu.signedit
+    usage: /editsign <line> <text> to edit a sign. Player must be looking at the sign.
 
 permissions:
   atu.admin:
@@ -73,3 +77,5 @@ permissions:
     description: Permission for walking faster on paths.
   atu.elevators:
     description: Permissoin to use elevators.
+  atu.signedit:
+    description: Permissoin to edit Signs.

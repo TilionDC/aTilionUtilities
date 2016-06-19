@@ -1,6 +1,6 @@
 # aTilionUtilities
 
-### Version: 0.1.1
+### Version: 0.2.0
 
 The purpose of this plugin is to add some extra functionality and fun features to your minecraft server.
 This is a utilitiy plugin and has some of the features essentials have. But it is not created to take essentials place.
