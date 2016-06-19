@@ -7,14 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/plugin.yml" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" />
     </list>
     <ignored path="ATilionUtilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +42,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.79141104">
-                <caret line="243" column="15" selection-start-line="243" selection-start-column="15" selection-end-line="243" selection-end-column="15" />
+              <first_editor vertical-scroll-proportion="0.05214724">
+                <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -120,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="84" selection-end-column="42" />
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -196,12 +193,12 @@
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ElevatorSignListener.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -970,7 +967,7 @@
       <workItem from="1465988120728" duration="4784000" />
       <workItem from="1466179671330" duration="39151000" />
       <workItem from="1466300102617" duration="1279000" />
-      <workItem from="1466322287055" duration="8210000" />
+      <workItem from="1466322287055" duration="8331000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -1122,11 +1119,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466301467498</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Crushed theese bugs :&#10;Fly over path should not be faster&#10;No /atu help command workign yet&#10;/signedit command doesn't work right now.&#10;Can edit others private signs with signedit&#10;Can place private signs on other claimed chests&#10;&#10;And updated the readme with the 0.2.0 config">
+      <created>1466330569914</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1466330569914</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234827000" />
+    <option name="totallyTimeSpent" value="234948000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1143,9 +1146,9 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.13204592" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.13152401" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.8679541" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.868476" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1199,7 +1202,8 @@
     <MESSAGE value="Updated README&#10;Added chest locking system&#10;Added sign changing command&#10;Upadted config version&#10;Updated plugin version" />
     <MESSAGE value="Changed my mind. new version will be 0.2.0" />
     <MESSAGE value="Fixed a small error in chestlocks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a small error in chestlocks" />
+    <MESSAGE value="Crushed theese bugs :&#10;Fly over path should not be faster&#10;No /atu help command workign yet&#10;/signedit command doesn't work right now.&#10;Can edit others private signs with signedit&#10;Can place private signs on other claimed chests&#10;&#10;And updated the readme with the 0.2.0 config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crushed theese bugs :&#10;Fly over path should not be faster&#10;No /atu help command workign yet&#10;/signedit command doesn't work right now.&#10;Can edit others private signs with signedit&#10;Can place private signs on other claimed chests&#10;&#10;And updated the readme with the 0.2.0 config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1581,18 +1585,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="84" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="99" selection-start-line="67" selection-start-column="99" selection-end-line="67" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1617,8 +1621,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.79141104">
-            <caret line="243" column="15" selection-start-line="243" selection-start-column="15" selection-end-line="243" selection-end-column="15" />
+          <first_editor vertical-scroll-proportion="0.05214724">
+            <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             <folding />
           </first_editor>
           <second_editor />

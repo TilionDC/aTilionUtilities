@@ -1,5 +1,5 @@
 name: ATilionUtilities
-version: 0.2.0
+version: 0.2.1
 description: It adds some extra fun stuff to minecraft
 author: TilionDC
 
@@ -46,7 +46,11 @@ commands:
   signedit:
     description: Allows a player to edit the sign looked at by the player.
     permission: atu.signedit
-    usage: /editsign <line> <text> to edit a sign. Player must be looking at the sign.
+    usage: /signedit <line> <text> to edit a sign. Player must be looking at the sign.
+  signeditplayer:
+    description: Add a user to a sign if there is an empty line.
+    permission: atu.chestlock
+    usage: /signeditplayer <add/remove> <player>
 
 permissions:
   atu.admin:
