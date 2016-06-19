@@ -1,9 +1,13 @@
-package me.tiliondc.atu.listeners;
+package me.tiliondc.atu.modules;
 
 import me.tiliondc.atu.ATilionUtilities;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -15,7 +19,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.spigotmc.event.entity.EntityDismountEvent;
 
-public class StairChairListener implements Listener {
+public class StairChairListener implements Listener, CommandExecutor {
 
     ATilionUtilities plugin;
     double distance;
@@ -29,6 +33,7 @@ public class StairChairListener implements Listener {
         this.requireSigns = requireSigns;
         this.requireEmptyHand = requireEmptyHand;
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
+        plugin.getCommand("togglechairs").setExecutor(this);
 
     }
 
@@ -84,6 +89,22 @@ public class StairChairListener implements Listener {
             e.getEntity().teleport(e.getDismounted());
             e.getDismounted().remove();
         }
+    }
+
+    @Override
+    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+
+        if(commandSender instanceof Player) {
+
+            Player p = (Player) commandSender;
+            if(!p.hasMetadata("USE_CHAIRS")) p.setMetadata("USE_CHAIRS", new FixedMetadataValue(plugin, true));
+
+            p.setMetadata("USE_CHAIRS", new FixedMetadataValue(plugin, !p.getMetadata("USE_CHAIRS").get(0).asBoolean()));
+            p.sendMessage(ChatColor.DARK_GREEN + "You turned chairs " + (p.getMetadata("USE_CHAIRS").get(0).asBoolean() ? ChatColor.GREEN + "on" : ChatColor.RED + "off"));
+            return true;
+        }
+
+        return false;
     }
 
 

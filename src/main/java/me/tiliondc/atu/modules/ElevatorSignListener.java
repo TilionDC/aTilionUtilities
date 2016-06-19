@@ -1,6 +1,7 @@
-package me.tiliondc.atu.listeners;
+package me.tiliondc.atu.modules;
 
 import me.tiliondc.atu.ATilionUtilities;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -16,8 +17,9 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class ElevatorSignListener implements Listener{
+public class ElevatorSignListener implements Listener {
 
     ATilionUtilities plugin;
 
@@ -41,6 +43,7 @@ public class ElevatorSignListener implements Listener{
 
     @EventHandler
     public void playerChangeSign(SignChangeEvent e) {
+        Bukkit.broadcastMessage("Changing sing" + Arrays.toString(e.getLines()));
 
         if(e.getLine(0).equalsIgnoreCase("[ELEVATOR]")) {
             if(!e.getPlayer().hasPermission("atu.elevators")) return;
@@ -248,6 +251,7 @@ public class ElevatorSignListener implements Listener{
 
             ArrayList<Entity> ents = new ArrayList<>();
 
+
             for(Entity ent : sign.getWorld().getNearbyEntities(sign.getLocation(), maxPadSize, 2, maxPadSize)) {
                 ents.add(ent);
             }
@@ -262,7 +266,8 @@ public class ElevatorSignListener implements Listener{
                 if(ba != null && ba.isEmpty()) ba = ba.getRelative(BlockFace.DOWN);
                 if(ba == null || ba.isEmpty()) return;
                 for(Entity e : ents) {
-                    Location loc = e.getLocation().add(0, (ba.getY() - e.getLocation().getBlockY()) + 1, 0);
+                    Location loc = e.getLocation();
+                    loc.setY(ba.getY());
                     if(loc.getBlock().getRelative(BlockFace.DOWN).isEmpty()) continue;
                     if(e.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() != base.getType()) continue;
                     e.teleport(loc);
@@ -278,7 +283,8 @@ public class ElevatorSignListener implements Listener{
                 if(ba != null && ba.isEmpty()) ba = ba.getRelative(BlockFace.DOWN);
                 if(ba == null || ba.isEmpty()) return;
                 for(Entity e : ents) {
-                    Location loc = e.getLocation().subtract(0, (e.getLocation().getBlockY() - ba.getY()) - 1, 0);
+                    Location loc = e.getLocation();
+                    loc.setY(ba.getY());
                     if(loc.getBlock().getRelative(BlockFace.DOWN).isEmpty()) continue;
                     if(e.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() != base.getType()) continue;
                     e.teleport(loc);

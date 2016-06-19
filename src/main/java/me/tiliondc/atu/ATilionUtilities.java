@@ -1,17 +1,11 @@
 package me.tiliondc.atu;
 
-import me.tiliondc.atu.commands.*;
 import me.tiliondc.atu.database.SQLiteDB;
-import me.tiliondc.atu.listeners.ChatAndSignColors;
-import me.tiliondc.atu.listeners.ElevatorSignListener;
-import me.tiliondc.atu.listeners.PathBlockListener;
-import me.tiliondc.atu.listeners.StairChairListener;
+import me.tiliondc.atu.modules.*;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
-import java.util.Map;
 
 public class ATilionUtilities extends JavaPlugin {
 
@@ -30,7 +24,6 @@ public class ATilionUtilities extends JavaPlugin {
         if(getConfig().getBoolean("Chair.Enabled")) {
             new StairChairListener(this, (float) getConfig().getDouble("Chair.Distance"),
                     getConfig().getBoolean("Chair.Require-Signs"), getConfig().getBoolean("Chair.Require-Empty-Hand"));
-            new ToggleChairsCommand(this);
         }
 
         if(getConfig().getBoolean("Elevator-Signs.Enabled")) {
@@ -40,7 +33,7 @@ public class ATilionUtilities extends JavaPlugin {
                     getConfig().getInt("Elevator-Signs.Max-Pad-Size"));
         }
         if(getConfig().getBoolean("Chat-Colors.Enabled")) {
-            new ChatAndSignColors(this, getConfig().getString("Chat-Colors.Prefix").charAt(0));
+            new ChatAndSignColorsListemer(this, getConfig().getString("Chat-Colors.Prefix").charAt(0));
         }
 
         if(getConfig().getBoolean("Sudo.Enabled")) {
@@ -63,6 +56,12 @@ public class ATilionUtilities extends JavaPlugin {
         }
         if(getConfig().getBoolean("Feed.Enabled")) {
             new FeedCommand(this);
+        }
+        if(getConfig().getBoolean("Sign-Edit.Enabled")) {
+            new EditSignCommand(this);
+        }
+        if(getConfig().getBoolean("Locked-Chests.Enabled")) {
+            new ChestLockListener(this);
         }
 
 

@@ -1,6 +1,6 @@
 # aTilionUtilities
 
-### Version: 0.1
+### Version: 0.1.1
 
 The purpose of this plugin is to add some extra functionality and fun features to your minecraft server.
 This is a utilitiy plugin and has some of the features essentials have. But it is not created to take essentials place.
@@ -20,9 +20,10 @@ Any features in this mod can be disabled in the config.
 - **Kit** - You can give players the ability to /kit [kit name] if they have the atu.kit.[kit name} permission.
 - **Heal command** - Heal yoursel or a player with /heal [player] [hearts] *Contains Easter egg*
 - **Feed command** - Feed yourself or a player with /feed [player] [chickenlegs]
+- **Locked Chests Signs** - Use signs to lock a chest to you.
+- **Edit Sign Command** - Use /signedit <line> <tezt> while looking at a sign to edit it.
 
 ###  Upcomming features:
-- **Locked Chests Signs** - Use signs to lock a chest to you.
 - **Special items and armor** - Special tools and armor that give special gameplay effects.
 - **Bridge dispenser/Sign** - Place a sign on dispencers to create a retracting/extracting bridge.
 - **Welcome message** - Display a welcome/login message with boss bar.
@@ -35,6 +36,9 @@ Any features in this mod can be disabled in the config.
 - **Remote redstone sign** - use signs to setup remote redstone signals.
 - **Linked chests** - Setup a sign on a chest to link it to a "Mother chest".
 - **Black holes** - Terrain generated black holes that will teleport you somewhere else.
+- **Gravestones** - Spawn a gravestone where the player died. Can optionally contain all the dropped items.
+- **Remote Chests** - Chests sharing inventories with other chests.
+- **Chest Shops** - Make [SELL] and [BUY] Chests to trade items with other players.
 
 ## Commands: 
 

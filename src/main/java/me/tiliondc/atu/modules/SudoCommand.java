@@ -1,4 +1,4 @@
-package me.tiliondc.atu.commands;
+package me.tiliondc.atu.modules;
 
 import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.Bukkit;

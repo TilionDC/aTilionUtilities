@@ -19,7 +19,7 @@ public class SQLiteDB {
         try {
 
             Class.forName("org.sqlite.JDBC");
-            con = DriverManager.getConnection("jdbc:sqlite:test.db");
+            con = DriverManager.getConnection("jdbc:sqlite:" + plugin.getDataFolder() + "/test.db");
             stmt = con.createStatement();
             plugin.getLogger().info("Connected successfully to database");
 

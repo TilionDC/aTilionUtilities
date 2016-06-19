@@ -1,4 +1,4 @@
-package me.tiliondc.atu.commands;
+package me.tiliondc.atu.modules;
 
 import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.Bukkit;
@@ -65,7 +65,7 @@ public class FlyCommand implements CommandExecutor{
         if (secounds > 0) {
             player.setAllowFlight(true);
             player.setFlying(true);
-            player.sendMessage(ChatColor.DARK_GREEN + "You are now flying for " + secounds + " secounds.");
+            player.sendMessage(ChatColor.DARK_GREEN + "You are now flying for " + secounds + " seconds.");
             final Player finalPlayer = player;
             new BukkitRunnable() {
                 @Override

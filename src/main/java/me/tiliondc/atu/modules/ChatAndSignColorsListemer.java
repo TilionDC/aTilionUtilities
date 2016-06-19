@@ -1,4 +1,4 @@
-package me.tiliondc.atu.listeners;
+package me.tiliondc.atu.modules;
 
 import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.ChatColor;
@@ -7,12 +7,12 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
-public class ChatAndSignColors implements Listener {
+public class ChatAndSignColorsListemer implements Listener {
 
     ATilionUtilities plugin;
     char prefix;
 
-    public ChatAndSignColors(ATilionUtilities plugin, char prefix) {
+    public ChatAndSignColorsListemer(ATilionUtilities plugin, char prefix) {
 
         this.plugin = plugin;
         this.prefix = prefix;
