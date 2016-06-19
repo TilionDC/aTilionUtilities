@@ -10,6 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.SignChangeEvent;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -31,7 +32,7 @@ public class EditSignCommand implements CommandExecutor {
             return true;
         }
         if(strings.length > 0) {
-            int line = 0;
+            int line;
             try {
                 line = Integer.parseInt(strings[0]);
 
@@ -66,15 +67,19 @@ public class EditSignCommand implements CommandExecutor {
 
             SignChangeEvent e = new SignChangeEvent(sign.getBlock(), (Player) commandSender, lines);
             plugin.getServer().getPluginManager().callEvent(e);
+            String all = Arrays.toString(lines);
+            all = all.substring(1, all.length() - 1);
+            if(all.contains("[") && all.contains("]")) e.setCancelled(true);
+
             if(!e.isCancelled()) {
-                commandSender.sendMessage(ChatColor.GREEN + "You changed the sign line " + ChatColor.AQUA +  line +
+                commandSender.sendMessage(ChatColor.GREEN + "You changed the sign line " + ChatColor.AQUA + line +
                         ChatColor.GREEN + " from " + ChatColor.GOLD + old + ChatColor.GREEN + " to " + ChatColor.GOLD +
                         sign.getLine(line));
                 sign.setLine(line, text);
                 sign.update();
                 sign.update(true);
             } else {
-                commandSender.sendMessage(ChatColor.RED + " You can't change this sign");
+                commandSender.sendMessage(ChatColor.RED + " You can't do this");
             }
             return true;
         }

@@ -1,11 +1,16 @@
 package me.tiliondc.atu.modules;
 
 import me.tiliondc.atu.ATilionUtilities;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.*;
 import org.bukkit.block.Chest;
 import org.bukkit.block.Sign;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
@@ -18,7 +23,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ChestLockListener implements Listener{
+public class ChestLockListener implements Listener, CommandExecutor {
 
     ATilionUtilities plugin;
 
@@ -27,6 +32,7 @@ public class ChestLockListener implements Listener{
         this.plugin = plugin;
 
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
+        plugin.getCommand("signeditplayer").setExecutor(this);
 
     }
 
@@ -35,7 +41,8 @@ public class ChestLockListener implements Listener{
 
         if(!e.getPlayer().hasPermission("atu.chestlock")) return;
 
-        Block b = e.getBlock();
+        org.bukkit.material.Sign s = (org.bukkit.material.Sign) e.getBlock().getState().getData();
+        Block b = e.getBlock().getRelative(s.getAttachedFace());
         Set<Sign> signs = findAttachedSigns(b);
         Block c = null;
         if(b.getType().equals(Material.CHEST) || b.getType().equals(Material.TRAPPED_CHEST)) {
@@ -54,8 +61,6 @@ public class ChestLockListener implements Listener{
         }
 
         if(e.getLine(0).equalsIgnoreCase("[PRIVATE]")) {
-
-            org.bukkit.material.Sign s = (org.bukkit.material.Sign) e.getBlock().getState().getData();
 
             if (!s.isWallSign()) return;
 
@@ -242,4 +247,94 @@ public class ChestLockListener implements Listener{
     }
 
 
+    @Override
+    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+
+        if(!(commandSender instanceof Player)) {
+            commandSender.sendMessage("Only a player can do this");
+            return true;
+        }
+
+        Player player = (Player) commandSender;
+
+        if(strings.length != 2) return false;
+
+        Set<Material> blocks = new HashSet<>();
+        blocks.add(Material.AIR);
+        blocks.add(Material.STATIONARY_WATER);
+        blocks.add(Material.STATIONARY_LAVA);
+        Sign sign = null;
+        if(((Player)commandSender).getTargetBlock(blocks, 6).getState() instanceof Sign) sign = (Sign) ((Player)commandSender).getTargetBlock(blocks, 6).getState();
+        if(sign == null) {
+
+            commandSender.sendMessage(ChatColor.RED + "You need to be looking at a sign when doing this");
+            return true;
+
+        }
+        Block b = sign.getBlock().getRelative(
+                ((org.bukkit.material.Sign) sign.getBlock().getState().getData()).getAttachedFace());
+        Set<Sign> signs = findAttachedSigns(b);
+        Block c = null;
+        if(b.getType().equals(Material.CHEST) || b.getType().equals(Material.TRAPPED_CHEST)) {
+            c = findOtherDoubleChest((Chest) b.getState());
+        }
+        if(c != null) {
+            signs.addAll(findAttachedSigns(c));
+        }
+
+        Set<String> names = getAllNames(signs);
+        String owner = getOwnerName(names);
+
+        if(signs != null && owner != null && !owner.toLowerCase().contains(player.getName().toLowerCase())) {
+            commandSender.sendMessage(ChatColor.RED + "You need to be the owner of the container you try to edit");
+            return true;
+        }
+
+
+        if(!sign.getLine(0).contains("[PRIVATE]")) {
+            commandSender.sendMessage(ChatColor.RED + "The sign needs to be a chestlock sign");
+        }
+        if(signs == null) return true;
+        if(strings[0].equalsIgnoreCase("add")) {
+            if(Arrays.toString(names.toArray()).contains(strings[1].toLowerCase())) {
+                commandSender.sendMessage(ChatColor.RED + "This player already has access to this chest");
+                return true;
+            }
+            Bukkit.broadcastMessage(Arrays.toString(names.toArray()));
+            for(Sign si : signs) {
+                for(int i = 1; i < 4; i++) {
+                    if(si.getLine(i).isEmpty()) {
+                        commandSender.sendMessage(ChatColor.GREEN + "You have added a name");
+                        si.setLine(i, ChatColor.GRAY + strings[1]);
+                        si.update();
+                        si.update(true);
+                        return true;
+                    }
+                }
+            }
+            commandSender.sendMessage(ChatColor.RED + "There was no space left to add another name." +
+                    " Place another sign on the container");
+            return true;
+        }
+
+        if(strings[0].equalsIgnoreCase("remove")) {
+
+            for(Sign si : signs) {
+                for(int i = 1; i < 4; i++) {
+                    if(si.getLine(i).toLowerCase().contains(strings[1].toLowerCase())) {
+                        si.setLine(i, "");
+                        si.update();
+                        si.update(true);
+                        return true;
+                    }
+                }
+            }
+            commandSender.sendMessage(ChatColor.GREEN + "The name you wanter to remove from " +
+                    "whitelist was not on the whitelist");
+            return true;
+        }
+
+
+        return false;
+    }
 }

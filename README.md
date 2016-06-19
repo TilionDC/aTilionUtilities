@@ -79,6 +79,14 @@ Any features in this mod can be disabled in the config.
     description: Feeds a player an given amount of hunger
     permission: atu.feed
     usage: /feed {player] [amount] to feed a player.
+  signedit:
+    description: Allows a player to edit the sign looked at by the player.
+    permission: atu.signedit
+    usage: /signedit <line> <text> to edit a sign. Player must be looking at the sign.
+  signeditplayer:
+    description: Add a user to a sign if there is an empty line.
+    permission: atu.chestlock
+    usage: /signeditplayer <add/remove> <player>
 ```
 
 
@@ -113,12 +121,14 @@ Any features in this mod can be disabled in the config.
     description: Permission for walking faster on paths.
   atu.elevators:
     description: Permissoin to use elevators.
+  atu.signedit:
+    description: Permissoin to edit Signs.
 ```
 
 ## Config
 
 ```
-# ---------------------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 # A Tilion Commands Configuration file
 #
 #
@@ -126,17 +136,17 @@ Any features in this mod can be disabled in the config.
 # @ tiliondc@gmail.com
 #
 #
-# --------------------------------------------------------------------
+# ------------------------------------------------------------------------------ #
 #
 # Materials can be found at:
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 #
-# When You update the plugin the config file updates automaticly.
-# All your saved values should be saved to the new config file
+# REMEMBER: When you update the plugin your configuration will update autmaticly which may result in a total
+# reset of your configuration. Be careful, the old config will be saved
+# in a file marked with the name of the previous version
 #
-
 # Version of config. Do NOT change this
-Version: 0.1.0
+Version: 0.2.0
 
 # Path Config
 Path:
@@ -172,12 +182,6 @@ Fly:
 Locked-Chests:
   # Encable or disable this feature. Must be either true or false.
   Enabled: true
-  # If you can have friends accessing your chests or not.
-  # Default values is true. Must be either true or false
-  Support-Friends: true
-  # If hoppers can access your chests or not. They still need to be locked by the same name
-  # Default value is true. Can be either true or false.
-  Support-Hoppers: true
 
 # Elevator signs config
 Elevator-Signs:
@@ -231,6 +235,11 @@ Heal:
 
 # Feed command config
 Feed:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Sign edit command config
+Sign-Edit:
   # Encable or disable this feature. Must be either true or false.
   Enabled: true
 ```

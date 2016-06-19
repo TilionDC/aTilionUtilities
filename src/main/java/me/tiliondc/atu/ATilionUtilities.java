@@ -18,6 +18,8 @@ public class ATilionUtilities extends JavaPlugin {
 
         getDB();
 
+        new ATUCommand(this);
+
         if(getConfig().getBoolean("Path.Enabled")) {
             new PathBlockListener(this, (float) getConfig().getDouble("Path.Speed"));
         }

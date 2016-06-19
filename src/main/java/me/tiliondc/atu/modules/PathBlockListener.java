@@ -24,6 +24,7 @@ public class PathBlockListener implements Listener {
     @EventHandler
     public void playerWalk(PlayerMoveEvent e) {
         if(!e.getPlayer().hasPermission("atu.pathblock")) return;
+        if(e.getPlayer().isFlying()) return;
 
         Location from = e.getFrom().clone();
         while(from.getBlock().getType() == Material.AIR) from.setY(from.getY() - 1);
