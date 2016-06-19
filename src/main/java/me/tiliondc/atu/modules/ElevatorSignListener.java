@@ -43,7 +43,6 @@ public class ElevatorSignListener implements Listener {
 
     @EventHandler
     public void playerChangeSign(SignChangeEvent e) {
-        Bukkit.broadcastMessage("Changing sing" + Arrays.toString(e.getLines()));
 
         if(e.getLine(0).equalsIgnoreCase("[ELEVATOR]")) {
             if(!e.getPlayer().hasPermission("atu.elevators")) return;

@@ -32,7 +32,6 @@ public class ChestLockListener implements Listener{
 
     @EventHandler
     public void playerChangeSign(SignChangeEvent e) {
-        if(e.getLine(0).contains("cancel")) e.setCancelled(true);
 
         if(!e.getPlayer().hasPermission("atu.chestlock")) return;
 
