@@ -1,6 +1,5 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Sign;
@@ -9,6 +8,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.SignChangeEvent;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -16,9 +16,9 @@ import java.util.Set;
 
 public class EditSignCommand implements CommandExecutor {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
 
-    public EditSignCommand(ATilionUtilities plugin) {
+    public EditSignCommand(JavaPlugin plugin) {
         this.plugin = plugin;
 
         plugin.getCommand("signedit").setExecutor(this);

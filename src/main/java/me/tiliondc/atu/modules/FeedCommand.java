@@ -1,16 +1,16 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class FeedCommand implements CommandExecutor {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
 
-    public FeedCommand(ATilionUtilities plugin) {
+    public FeedCommand(JavaPlugin plugin) {
 
         this.plugin = plugin;
 

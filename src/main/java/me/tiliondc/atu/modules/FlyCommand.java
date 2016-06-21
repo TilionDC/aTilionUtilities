@@ -1,20 +1,20 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class FlyCommand implements CommandExecutor{
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
     boolean noFalldamage;
 
-    public FlyCommand(ATilionUtilities plugin, boolean falldamage) {
+    public FlyCommand(JavaPlugin plugin, boolean falldamage) {
         this.plugin = plugin;
 
         plugin.getCommand("fly").setExecutor(this);

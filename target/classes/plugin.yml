@@ -51,6 +51,18 @@ commands:
     description: Add a user to a sign if there is an empty line.
     permission: atu.chestlock
     usage: /signeditplayer <add/remove> <player>
+  spawn:
+    description: Teleports a player to spawn.
+    permission: atu.spawn
+    usage: /spawn to teleport to spawn
+  nick:
+    description: Changes a players displayname and/or listname to whatever.
+    permisson: atu.nick
+    usage: /nick <new name> to chamge your name.
+  reveal:
+    description: Tells a user what their real name is based on their nick
+    permisson: atu.reveal
+    usage: /nick <nicke> to display that players real name
 
 permissions:
   atu.admin:
@@ -82,4 +94,10 @@ permissions:
   atu.elevators:
     description: Permissoin to use elevators.
   atu.signedit:
-    description: Permissoin to edit Signs.
+    description: Permissoin to edit Signs with command.
+  atu.spawn:
+    description: Permission to travel to spawn.
+  atu.nick:
+    description: Permission to change name.
+  atu.reveal:
+    description: Permission to reveal real name.

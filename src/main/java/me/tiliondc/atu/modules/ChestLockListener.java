@@ -1,6 +1,5 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -18,6 +17,7 @@ import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.inventory.InventoryMoveItemEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -25,9 +25,9 @@ import java.util.Set;
 
 public class ChestLockListener implements Listener, CommandExecutor {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
 
-    public ChestLockListener(ATilionUtilities plugin) {
+    public ChestLockListener(JavaPlugin plugin) {
 
         this.plugin = plugin;
 
@@ -60,11 +60,14 @@ public class ChestLockListener implements Listener, CommandExecutor {
             return;
         }
 
+        if(b.getState() instanceof InventoryHolder && Arrays.toString(e.getLines()).length() == 8)
+            e.setLine(0, "[PRIVATE]");
+
         if(e.getLine(0).equalsIgnoreCase("[PRIVATE]")) {
 
             if (!s.isWallSign()) return;
 
-            if (!(e.getBlock().getRelative(s.getAttachedFace()).getState() instanceof InventoryHolder)) return;
+            if (!(b.getState() instanceof InventoryHolder)) return;
 
             e.setLine(0, ChatColor.GREEN + "[PRIVATE]");
             if(owner != null) {

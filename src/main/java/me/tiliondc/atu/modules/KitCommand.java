@@ -1,6 +1,5 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -11,6 +10,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,11 +22,11 @@ import java.util.Set;
 
 public class KitCommand implements CommandExecutor {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
 
     FileConfiguration config = null;
 
-    public KitCommand(ATilionUtilities plugin) {
+    public KitCommand(JavaPlugin plugin) {
 
         this.plugin = plugin;
 

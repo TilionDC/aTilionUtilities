@@ -22,6 +22,8 @@ Any features in this mod can be disabled in the config.
 - **Feed command** - Feed yourself or a player with /feed [player] [chickenlegs]
 - **Locked Chests Signs** - Use signs to lock a chest to you.
 - **Edit Sign Command** - Use /signedit <line> <tezt> while looking at a sign to edit it.
+- **Nick and reveal command** - do /nick to nick and /reveal to see real name of nick.
+- **Spawn Command** - call /spawn to go to spawn of the world.
 
 ###  Upcomming features:
 - **Special items and armor** - Special tools and armor that give special gameplay effects.
@@ -29,7 +31,6 @@ Any features in this mod can be disabled in the config.
 - **Welcome message** - Display a welcome/login message with boss bar.
 - **Reply to /tell** - Reply to tell command with . (dot) before the message. Ex: .Hello Player
 - **Recipe index** - Do /recpie to display an interface of the items recipe.
-- **Nick and reveal command** - do /nick to nick and /reveal to see real name of nick.
 - **Show Inventory** - Show inventory of another player with /inventory [player]
 - **Lightning** - Shoot a lightning bolt at the location you are looking at.
 - **tpa / tph** - Teleport to a player with permission of teleport the player to you.

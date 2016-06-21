@@ -1,6 +1,5 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -17,16 +16,17 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.metadata.FixedMetadataValue;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.spigotmc.event.entity.EntityDismountEvent;
 
 public class StairChairListener implements Listener, CommandExecutor {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
     double distance;
     boolean requireSigns;
     boolean requireEmptyHand;
 
-    public StairChairListener(ATilionUtilities plugin, double distance, boolean requireSigns, boolean requireEmptyHand) {
+    public StairChairListener(JavaPlugin plugin, double distance, boolean requireSigns, boolean requireEmptyHand) {
 
         this.plugin = plugin;
         this.distance = distance;

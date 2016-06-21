@@ -1,19 +1,18 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class PathBlockListener implements Listener {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
     float speed;
 
-    public PathBlockListener(ATilionUtilities plugin, float speed) {
+    public PathBlockListener(JavaPlugin plugin, float speed) {
         this.plugin = plugin;
         if(speed > 1) speed = 1;
         if(speed < 0) speed = 0;

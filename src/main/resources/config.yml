@@ -112,3 +112,13 @@ Feed:
 Sign-Edit:
   # Encable or disable this feature. Must be either true or false.
   Enabled: true
+
+# Spawn command config
+Spawn:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Nick & Reveal edit command config
+Nick:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true

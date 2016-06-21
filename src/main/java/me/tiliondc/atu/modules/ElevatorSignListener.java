@@ -1,7 +1,5 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -15,20 +13,20 @@ import org.bukkit.event.block.BlockRedstoneEvent;
 import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ElevatorSignListener implements Listener {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
 
     int maxDistance;
     boolean allowJumpAndSneak;
     boolean allowRedstone;
     int maxPadSize;
 
-    public ElevatorSignListener(ATilionUtilities plugin, int maxDistance, boolean allowJumpAndSneak, boolean allowRedstone, int maxPadSize) {
+    public ElevatorSignListener(JavaPlugin plugin, int maxDistance, boolean allowJumpAndSneak, boolean allowRedstone, int maxPadSize) {
 
         this.plugin = plugin;
         this.maxDistance = maxDistance;
@@ -49,10 +47,10 @@ public class ElevatorSignListener implements Listener {
 
             e.setLine(0, "[ELEVATOR]");
             Location loc = new Location(e.getBlock().getWorld(), e.getBlock().getX(), e.getBlock().getY() - 1, e.getBlock().getZ());
-            if(loc.getBlock().isEmpty()) loc = new Location(e.getBlock().getWorld(), e.getBlock().getX(), e.getBlock().getY() - 2, e.getBlock().getZ());
-            if(loc.getBlock().isEmpty()) loc = new Location(e.getBlock().getWorld(), e.getBlock().getX(), e.getBlock().getY() - 3, e.getBlock().getZ());
+            if(!loc.getBlock().getType().isSolid()) loc = new Location(e.getBlock().getWorld(), e.getBlock().getX(), e.getBlock().getY() - 2, e.getBlock().getZ());
+            if(!loc.getBlock().getType().isSolid()) loc = new Location(e.getBlock().getWorld(), e.getBlock().getX(), e.getBlock().getY() - 3, e.getBlock().getZ());
 
-            if(loc.getBlock().isEmpty()) {
+            if(!loc.getBlock().getType().isSolid()) {
                 e.setLine(0, ChatColor.DARK_RED + "[ELEVATOR]");
                 return;
             }
@@ -247,7 +245,8 @@ public class ElevatorSignListener implements Listener {
             if(base.isEmpty() || !base.getType().isSolid()) base = base.getRelative(BlockFace.DOWN);
             if(base.isEmpty() || !base.getType().isSolid()) base = base.getRelative(BlockFace.DOWN);
             if(base.isEmpty() || !base.getType().isSolid()) return;
-
+            if(base.getType().toString().contains("PLATE"))
+                base = base.getRelative(BlockFace.DOWN);
             ArrayList<Entity> ents = new ArrayList<>();
 
 
@@ -261,12 +260,15 @@ public class ElevatorSignListener implements Listener {
                 if(s == null) return;
                 if(!s.getLine(1).contains("[DOWN]")) return;
                 Block ba = s.getBlock().getRelative(BlockFace.DOWN);
-                if(ba != null && ba.isEmpty()) ba = ba.getRelative(BlockFace.DOWN);
-                if(ba != null && ba.isEmpty()) ba = ba.getRelative(BlockFace.DOWN);
-                if(ba == null || ba.isEmpty()) return;
+                if(ba != null && !ba.getType().isSolid()) ba = ba.getRelative(BlockFace.DOWN);
+                if(ba != null && !ba.getType().isSolid()) ba = ba.getRelative(BlockFace.DOWN);
+                if(ba == null || !ba.getType().isSolid()) return;
+                if(ba.getType().toString().contains("PLATE"))
+                    ba = ba.getRelative(BlockFace.DOWN);
+
                 for(Entity e : ents) {
                     Location loc = e.getLocation();
-                    loc.setY(ba.getY());
+                    loc.setY(ba.getY() + 1);
                     if(loc.getBlock().getRelative(BlockFace.DOWN).isEmpty()) continue;
                     if(e.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() != base.getType()) continue;
                     e.teleport(loc);
@@ -278,19 +280,20 @@ public class ElevatorSignListener implements Listener {
                 if(s == null) return;
                 if(!s.getLine(1).contains("[UP]")) return;
                 Block ba = s.getBlock().getRelative(BlockFace.DOWN);
-                if(ba != null && ba.isEmpty()) ba = ba.getRelative(BlockFace.DOWN);
-                if(ba != null && ba.isEmpty()) ba = ba.getRelative(BlockFace.DOWN);
-                if(ba == null || ba.isEmpty()) return;
+                if(ba != null && !ba.getType().isSolid()) ba = ba.getRelative(BlockFace.DOWN);
+                if(ba != null && !ba.getType().isSolid()) ba = ba.getRelative(BlockFace.DOWN);
+                if(ba == null || !ba.getType().isSolid()) return;
+                if(ba.getType().toString().contains("PLATE"))
+                    ba = ba.getRelative(BlockFace.DOWN);
                 for(Entity e : ents) {
                     Location loc = e.getLocation();
-                    loc.setY(ba.getY());
+                    loc.setY(ba.getY() + 1);
                     if(loc.getBlock().getRelative(BlockFace.DOWN).isEmpty()) continue;
                     if(e.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() != base.getType()) continue;
                     e.teleport(loc);
                 }
             }
         }
-
     }
 
     @EventHandler
@@ -309,9 +312,7 @@ public class ElevatorSignListener implements Listener {
                         }
                     }
                 }
-
             }
         }
-
     }
 }

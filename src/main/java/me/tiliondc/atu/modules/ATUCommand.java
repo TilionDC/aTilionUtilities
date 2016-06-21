@@ -1,16 +1,16 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class ATUCommand implements CommandExecutor {
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
 
-    public ATUCommand(ATilionUtilities plugin) {
+    public ATUCommand(JavaPlugin plugin) {
         this.plugin = plugin;
 
     }

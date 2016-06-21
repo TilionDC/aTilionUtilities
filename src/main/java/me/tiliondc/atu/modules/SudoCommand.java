@@ -1,17 +1,17 @@
 package me.tiliondc.atu.modules;
 
-import me.tiliondc.atu.ATilionUtilities;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class SudoCommand implements CommandExecutor{
 
-    ATilionUtilities plugin;
+    JavaPlugin plugin;
 
-    public SudoCommand(ATilionUtilities plugin) {
+    public SudoCommand(JavaPlugin plugin) {
         this.plugin = plugin;
 
         plugin.getCommand("sudo").setExecutor(this);
