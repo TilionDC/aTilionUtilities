@@ -1,4 +1,4 @@
-package me.tiliondc.atu.modules;
+package me.tiliondc.atu.modules.essentials;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -23,6 +23,11 @@ public class FeedCommand implements CommandExecutor {
 
         if(!(commandSender instanceof Player)) return false;
         Player player = (Player) commandSender;
+
+        if(strings.length == 0) {
+            player.setSaturation(20);
+            player.setFoodLevel(20);
+        }
 
         if(strings.length == 1) {
             if(plugin.getServer().getPlayer(strings[0]) != null) {

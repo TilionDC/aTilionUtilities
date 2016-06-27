@@ -1,4 +1,4 @@
-package me.tiliondc.atu.modules;
+package me.tiliondc.atu.modules.essentials;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

@@ -6,34 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="Added Nick and Reveal command&#10;Started for real on the database support.&#10;Fixed bugs in elevator signs.&#10;Added empty sign will lock container in lock chest stuff&#10;added spawn command.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/DatabaseListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/NickAndRevealCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SpawnCommand.java" />
+    <list default="true" id="75491bec-bc62-4d6b-98ba-2096daa2bf6a" name="Default" comment="Working on the sqlite database">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/Database/SQLiteDB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/DatabaseListener.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/ATUCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChatAndSignColorsListemer.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chatandsigncolors/ChatAndSignColorsListemer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chestlock/ChestLockListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/editsign/EditSignCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ElevatorSignListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/elevator/ElevatorSignListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FeedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/FeedCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/FlyCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/HatCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/HatCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/KitCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/kits/KitCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/NickAndRevealCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/nick/NickAndRevealCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/speedpaths/PathBlockListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/RulesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/rules/RulesCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SpawnCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/SpawnCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/StairChairListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chairs/StairChairListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SudoCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/SudoCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" afterPath="$PROJECT_DIR$/target/classes/me/tiliondc/atu/ATilionUtilities.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChatAndSignColorsListemer.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChatAndSignColorsListemer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ElevatorSignListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ElevatorSignListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FeedCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FeedCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/HatCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/HatCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/KitCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/KitCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/RulesCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/RulesCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/StairChairListener.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/StairChairListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SudoCommand.java" afterPath="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SudoCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.yml" afterPath="$PROJECT_DIR$/target/classes/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/plugin.yml" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" />
     </list>
     <ignored path="ATilionUtilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <file leaf-file-name="NickAndRevealCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/nick/NickAndRevealCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="48" selection-start-line="102" selection-start-column="48" selection-end-line="102" selection-end-column="48" />
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -78,83 +72,90 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/DatabaseListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="74" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SQLiteDB.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/database/SQLiteDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.17256011">
-              <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1466512812496" expanded="true" signature="844:890" placeholder="CREATE TABLE... IF" />
-                <marker date="1466512812496" expanded="true" signature="966:1001" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="1088:1117" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="1158:1176" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="1251:1255" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="1299:1303" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="1753:1760" placeholder="key0 = missi... " />
-                <marker date="1466512812496" expanded="true" signature="1829:1871" placeholder="INSERT OR... " />
-                <marker date="1466512812496" expanded="true" signature="1984:1989" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="2103:2140" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="2215:2222" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="2336:2365" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="2539:2656" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="2541:2629" placeholder="SELECT missi... missingValue" />
-                <marker date="1466512812496" expanded="true" signature="2695:2714" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="3393:3396" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="3463:3468" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="3555:3581" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="3670:3674" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="3846:3852" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="3929:3936" placeholder="missingValue... " />
-                <marker date="1466512812496" expanded="true" signature="4765:4798" placeholder="SELECT * FRO... missingValue" />
-                <marker date="1466512812496" expanded="true" signature="5172:5205" placeholder="SELECT * FRO... missingValue" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <file leaf-file-name="HatCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/HatCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
+      <file leaf-file-name="HealCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/HealCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding />
+            </state>
           </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-                <folding />
-              </first_editor>
-              <second_editor />
+        </entry>
+      </file>
+      <file leaf-file-name="PathBlockListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/speedpaths/PathBlockListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpawnCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/SpawnCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42291373">
+              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/FeedCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SudoCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/SudoCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StairChairListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chairs/StairChairListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RulesCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/rules/RulesCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,23 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ATilionUtilities.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/ATilionUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atilionutilities/ATilionUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/PathBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/PathBlockEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/CoreListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/ATUCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/SudoCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/Database/SQLiteDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/listeners/ChestLockListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/utils/BlockUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/FlyCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/RulesCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/rules.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/HatCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/kits.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/KitCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/HealAndFeedCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/commands/FeedCommand.java" />
@@ -227,12 +211,29 @@
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SudoCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SpawnCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/NickAndRevealCommand.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/DatabaseListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/database/SQLiteDB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/DatabaseListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/NickAndRevealCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/AdminCommands/ATUCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/ATUCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chatandsigncolors/ChatAndSignColorsListemer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chestlock/ChestLockListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/editsign/EditSignCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/elevator/ElevatorSignListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/FlyCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/HatCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/kits/KitCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/rules/RulesCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/nick/NickAndRevealCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/speedpaths/PathBlockListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/SudoCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chairs/StairChairListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/HealCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/SpawnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/FeedCommand.java" />
       </list>
     </option>
   </component>
@@ -284,7 +285,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -426,13 +427,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="essentials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1006,7 +1011,10 @@
       <workItem from="1466427162026" duration="23448000" />
       <workItem from="1466494599015" duration="3129000" />
       <workItem from="1466501073838" duration="1721000" />
-      <workItem from="1466509425130" duration="2333000" />
+      <workItem from="1466509425130" duration="15232000" />
+      <workItem from="1466722893840" duration="5649000" />
+      <workItem from="1466950594017" duration="2434000" />
+      <workItem from="1467025778240" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="Version 0.0.2 Added sudo and fly command, stairs are sittable. And paths are runnable.">
       <created>1465129006075</created>
@@ -1170,11 +1178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1466330665023</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Working on the sqlite database">
+      <created>1466512849606</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1466512849606</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Working on the sqlite database">
+      <created>1466513262725</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1466513262725</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276932000" />
+    <option name="totallyTimeSpent" value="298263000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1191,11 +1211,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.096875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.092708334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.903125" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2230444" sideWeight="0.90729165" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.4857143" order="0" side_tool="false" content_ui="combo" />
@@ -1204,14 +1225,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1796875" sideWeight="0.51428574" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49582464" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1250,7 +1270,8 @@
     <MESSAGE value="Crushed theese bugs :&#10;Fly over path should not be faster&#10;No /atu help command workign yet&#10;/signedit command doesn't work right now.&#10;Can edit others private signs with signedit&#10;Can place private signs on other claimed chests&#10;&#10;And updated the readme with the 0.2.0 config" />
     <MESSAGE value="Updated to 0.2.1" />
     <MESSAGE value="Added Nick and Reveal command&#10;Started for real on the database support.&#10;Fixed bugs in elevator signs.&#10;Added empty sign will lock container in lock chest stuff&#10;added spawn command." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Nick and Reveal command&#10;Started for real on the database support.&#10;Fixed bugs in elevator signs.&#10;Added empty sign will lock container in lock chest stuff&#10;added spawn command." />
+    <MESSAGE value="Working on the sqlite database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on the sqlite database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1263,6 +1284,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/rules/RulesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ATilionUtilities.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1282,12 +1324,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/ATUCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
@@ -1304,13 +1346,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/speedpaths/PathBlockListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1381,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1385,13 +1425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ATilionUtilities.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1472,35 +1505,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ATilionUtilities.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.22320117">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="78" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.8751836">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChestLockListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ChatAndSignColorsListemer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="102" column="48" selection-start-line="102" selection-start-column="48" selection-end-line="102" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ATUCommand.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.20858896">
+            <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/ATUCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -1510,170 +1562,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/EditSignCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chatandsigncolors/ChatAndSignColorsListemer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/ElevatorSignListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FeedCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/FlyCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/HatCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/HealCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/KitCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SudoCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/PathBlockListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39273927">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/RulesCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.14026402">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/SpawnCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49339935">
-          <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/StairChairListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028052805">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/NickAndRevealCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.34653464">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chestlock/ChestLockListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/editsign/EditSignCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="48" selection-start-line="102" selection-start-column="48" selection-end-line="102" selection-end-column="48" />
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/elevator/ElevatorSignListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/FlyCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/kits/KitCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/rules/RulesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/nick/NickAndRevealCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/HatCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/speedpaths/PathBlockListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/atuadmin/SudoCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/chairs/StairChairListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1681,53 +1661,34 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/ATilionUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/DatabaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="74" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/database/SQLiteDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.17256011">
-          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1466512812496" expanded="true" signature="844:890" placeholder="CREATE TABLE... IF" />
-            <marker date="1466512812496" expanded="true" signature="966:1001" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="1088:1117" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="1158:1176" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="1251:1255" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="1299:1303" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="1753:1760" placeholder="key0 = missi... " />
-            <marker date="1466512812496" expanded="true" signature="1829:1871" placeholder="INSERT OR... " />
-            <marker date="1466512812496" expanded="true" signature="1984:1989" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="2103:2140" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="2215:2222" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="2336:2365" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="2539:2656" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="2541:2629" placeholder="SELECT missi... missingValue" />
-            <marker date="1466512812496" expanded="true" signature="2695:2714" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="3393:3396" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="3463:3468" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="3555:3581" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="3670:3674" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="3846:3852" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="3929:3936" placeholder="missingValue... " />
-            <marker date="1466512812496" expanded="true" signature="4765:4798" placeholder="SELECT * FRO... missingValue" />
-            <marker date="1466512812496" expanded="true" signature="5172:5205" placeholder="SELECT * FRO... missingValue" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/HealCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/FeedCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/tiliondc/atu/modules/essentials/SpawnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42291373">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package me.tiliondc.atu.modules;
+package me.tiliondc.atu.modules.essentials;
 
 import com.comphenix.protocol.PacketType;
 import org.bukkit.ChatColor;
@@ -24,14 +24,14 @@ public class SpawnCommand implements CommandExecutor {
         if(!(commandSender instanceof Player)) {
             commandSender.sendMessage(ChatColor.RED + "Only a player can do this command");
         }
+        Player player = (Player) commandSender;
         if(strings.length == 0 ) {
-            ((Player) commandSender).teleport(((Player) commandSender).getWorld().getSpawnLocation());
+            player.teleport(player.getWorld().getSpawnLocation());
             return true;
         }
 
         if(strings.length == 1) {
             World world = plugin.getServer().getWorld(strings[0]);
-            Player player = (Player) commandSender;
             if(world != null) {
                 player.teleport(world.getSpawnLocation());
                 player.sendMessage(ChatColor.GREEN + "You have just teleported to the spawn of world: " + ChatColor.AQUA + world.getName());
@@ -47,7 +47,7 @@ public class SpawnCommand implements CommandExecutor {
                 return true;
             }
             World world = plugin.getServer().getWorld(strings[0]);
-            Player player = plugin.getServer().getPlayer(strings[1]);
+            player = plugin.getServer().getPlayer(strings[1]);
             if(player == null) {
                 commandSender.sendMessage(ChatColor.RED + "Could not find player: " + ChatColor.AQUA + strings[1]);
                 return true;

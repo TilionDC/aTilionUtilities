@@ -1,13 +1,19 @@
-package me.tiliondc.atu.modules;
+package me.tiliondc.atu.modules.nick;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerLoginEvent;
+import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class NickAndRevealCommand implements CommandExecutor{
+public class NickAndRevealCommand implements CommandExecutor, Listener {
 
     JavaPlugin plugin;
 
@@ -17,6 +23,7 @@ public class NickAndRevealCommand implements CommandExecutor{
 
         plugin.getCommand("nick").setExecutor(this);
         plugin.getCommand("reveal").setExecutor(this);
+        plugin.getServer().getPluginManager().registerEvents(this, plugin);
 
     }
 
@@ -36,6 +43,7 @@ public class NickAndRevealCommand implements CommandExecutor{
                 Player player = (Player) commandSender;
                 player.setDisplayName(strings[0]);
                 player.setPlayerListName(strings[0]);
+                player.setMetadata("Nick", new FixedMetadataValue(plugin, strings[0]));
                 player.sendMessage(ChatColor.GREEN + "You changed your name to: " + ChatColor.AQUA + strings[0]);
                 return true;
 
@@ -49,6 +57,7 @@ public class NickAndRevealCommand implements CommandExecutor{
                 }
                 player.setDisplayName(strings[1]);
                 player.setPlayerListName(strings[1]);
+                player.setMetadata("Nick", new FixedMetadataValue(plugin, strings[1]));
                 commandSender.sendMessage(ChatColor.GREEN + "You changed " + ChatColor.AQUA + player.getName() +
                         ChatColor.GREEN + " name to: " + ChatColor.AQUA + strings[1]);
                 player.sendMessage(ChatColor.AQUA + commandSender.getName() + ChatColor.GREEN +
@@ -83,4 +92,16 @@ public class NickAndRevealCommand implements CommandExecutor{
 
         return false;
     }
+
+    @EventHandler(priority = EventPriority.LOWEST)
+    public void onPlayerLogin(PlayerLoginEvent e) {
+
+        if(e.getPlayer().hasMetadata("Nick")) {
+            String nick = e.getPlayer().getMetadata("Nick").get(0).asString();
+            e.getPlayer().setDisplayName(nick);
+            e.getPlayer().setPlayerListName(nick);
+        }
+
+    }
+
 }

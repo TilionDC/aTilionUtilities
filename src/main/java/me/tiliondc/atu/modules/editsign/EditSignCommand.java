@@ -1,4 +1,4 @@
-package me.tiliondc.atu.modules;
+package me.tiliondc.atu.modules.editsign;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

@@ -1,7 +1,17 @@
 package me.tiliondc.atu;
 
-import me.tiliondc.atu.database.SQLiteDB;
-import me.tiliondc.atu.modules.*;
+import me.tiliondc.atu.modules.atuadmin.ATUCommand;
+import me.tiliondc.atu.modules.atuadmin.SudoCommand;
+import me.tiliondc.atu.modules.chairs.StairChairListener;
+import me.tiliondc.atu.modules.chatandsigncolors.ChatAndSignColorsListemer;
+import me.tiliondc.atu.modules.chestlock.ChestLockListener;
+import me.tiliondc.atu.modules.editsign.EditSignCommand;
+import me.tiliondc.atu.modules.elevator.ElevatorSignListener;
+import me.tiliondc.atu.modules.essentials.*;
+import me.tiliondc.atu.modules.kits.KitCommand;
+import me.tiliondc.atu.modules.nick.NickAndRevealCommand;
+import me.tiliondc.atu.modules.rules.RulesCommand;
+import me.tiliondc.atu.modules.speedpaths.PathBlockListener;
 import org.bukkit.World;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -13,15 +23,12 @@ import java.io.File;
 
 public class ATilionUtilities extends JavaPlugin {
 
-    SQLiteDB database = null;
-
     @Override
     public void onEnable() {
         super.onEnable();
         createConfig();
 
         new ATUCommand(this);
-        new DatabaseListener(this, getDB());
 
         if (getConfig().getBoolean("Path.Enabled")) {
             new PathBlockListener(this, (float) getConfig().getDouble("Path.Speed"));
@@ -117,11 +124,5 @@ public class ATilionUtilities extends JavaPlugin {
 
         }
 
-    }
-
-    private SQLiteDB getDB() {
-
-        if (database == null) database = new SQLiteDB(this);
-        return database;
     }
 }

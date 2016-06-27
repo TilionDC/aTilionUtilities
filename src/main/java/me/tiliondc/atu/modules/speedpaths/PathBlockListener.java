@@ -1,4 +1,4 @@
-package me.tiliondc.atu.modules;
+package me.tiliondc.atu.modules.speedpaths;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
