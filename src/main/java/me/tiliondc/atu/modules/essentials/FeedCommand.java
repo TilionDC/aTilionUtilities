@@ -27,6 +27,7 @@ public class FeedCommand implements CommandExecutor {
         if(strings.length == 0) {
             player.setSaturation(20);
             player.setFoodLevel(20);
+            return true;
         }
 
         if(strings.length == 1) {
