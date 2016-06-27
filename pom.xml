@@ -36,13 +36,6 @@
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
-        <!--SQL Server-->
-        <!-- http://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
-        <dependency>
-            <groupId>org.xerial</groupId>
-            <artifactId>sqlite-jdbc</artifactId>
-            <version>3.8.10.1</version>
-        </dependency>
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib-API</artifactId>
