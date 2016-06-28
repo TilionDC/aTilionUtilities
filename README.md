@@ -24,6 +24,8 @@ Any features in this mod can be disabled in the config.
 - **Edit Sign Command** - Use /signedit <line> <tezt> while looking at a sign to edit it.
 - **Nick and reveal command** - do /nick to nick and /reveal to see real name of nick.
 - **Spawn Command** - call /spawn to go to spawn of the world.
+- **Player specific time command** - Added a player specific time command. Use /playertime [number]
+- **Player specific weather command** - Added a player specific weather command. Use /playerweather
 
 ###  Upcomming features:
 - **Special items and armor** - Special tools and armor that give special gameplay effects.
