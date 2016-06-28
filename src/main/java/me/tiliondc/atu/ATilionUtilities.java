@@ -1,5 +1,7 @@
 package me.tiliondc.atu;
 
+import me.tiliondc.atu.modules.BedSleepVote;
+import me.tiliondc.atu.modules.RepairExplosionDamage;
 import me.tiliondc.atu.modules.atuadmin.ATUCommand;
 import me.tiliondc.atu.modules.atuadmin.SudoCommand;
 import me.tiliondc.atu.modules.chairs.StairChairListener;
@@ -15,6 +17,7 @@ import me.tiliondc.atu.modules.speedpaths.PathBlockListener;
 import org.bukkit.World;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.event.entity.ExplosionPrimeEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.world.WorldUnloadEvent;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -80,6 +83,27 @@ public class ATilionUtilities extends JavaPlugin {
         }
         if (getConfig().getBoolean("Nick.Enabled")) {
             new NickAndRevealCommand(this);
+        }
+        if (getConfig().getBoolean("Player-Time.Enabled")) {
+            new PlayerSpecificTimeCommand(this);
+        }
+        if (getConfig().getBoolean("Player-Weather.Enabled")) {
+            new PlayerSpecificWeatherCommand(this);
+        }
+        /*
+        Disabled because its too buggy. Maybe I'll fix this in the future.
+
+        if (getConfig().getBoolean("Fix-Explosions.Enabled")) {
+            new RepairExplosionDamage(
+                    this,
+                    getConfig().getBoolean("Fix-Explosions.Repair-TNT"),
+                    getConfig().getBoolean("Fix-Explosions.Drop-Blocks"),
+                    getConfig().getInt("Fix-Explosions.Ticks-Until-Repair")
+            );
+        }
+        */
+        if (getConfig().getBoolean("Bed-Vote.Enabled")) {
+            new BedSleepVote(this);
         }
 
     }

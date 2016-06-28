@@ -63,6 +63,13 @@ commands:
     description: Tells a user what their real name is based on their nick
     permisson: atu.reveal
     usage: /nick <nicke> to display that players real name
+  playertime:
+    description: Sets the players game time to something else than the servers game time.
+    permission: atu.playertime
+    usage: /playertime [time] sets change the player for the specific player only
+  playerweather:
+    description: Sets the players weather to something else than the servers weather.
+    permission: atu.playerweather
 
 permissions:
   atu.admin:
@@ -101,3 +108,9 @@ permissions:
     description: Permission to change name.
   atu.reveal:
     description: Permission to reveal real name.
+  atu.playertime:
+    description: Permission to change player time.
+  atu.playerweather:
+    description: Permission to change player weather.
+  atu.ignorebeds:
+    description: Permission to ignore beds when you sleep to change time to day.

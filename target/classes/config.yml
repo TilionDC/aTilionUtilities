@@ -16,7 +16,7 @@
 # in a file marked with the name of the previous version
 #
 # Version of config. Do NOT change this
-Version: 0.2.0
+Version: 0.2.1
 
 # Path Config
 Path:
@@ -76,6 +76,7 @@ Chat-Colors:
   # Encable or disable this feature. Must be either true or false.
   Enabled: true
   # Chat color prefix. Has to be single char within single quotes. Default is '&'
+  # Default config value is '&'. Takes any character
   Prefix: '&'
 
 # Hats Config
@@ -120,5 +121,34 @@ Spawn:
 
 # Nick & Reveal edit command config
 Nick:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Player time command config
+Player-Time:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Player weather command config
+Player-Weather:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+
+# Fix Explosion damage config
+Fix-Explosions:
+  # Encable or disable this feature. Must be either true or false.
+  Enabled: true
+  # Repair tnt as well?
+  # Default config value is false
+  Repair-TNT: false
+  # Drop blocks from explosions
+  # Default config value is false
+  Drop-Blocks: false
+  # Ticks until the area is repaired.
+  # Default config value is 6000 (20 ticks per second)
+  Ticks-Until-Repair: 300
+
+# Fix Explosion damage config
+Bed-Vote:
   # Encable or disable this feature. Must be either true or false.
   Enabled: true

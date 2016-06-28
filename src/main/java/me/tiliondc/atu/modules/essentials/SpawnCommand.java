@@ -1,6 +1,5 @@
 package me.tiliondc.atu.modules.essentials;
 
-import com.comphenix.protocol.PacketType;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.command.Command;
@@ -15,6 +14,8 @@ public class SpawnCommand implements CommandExecutor {
 
     public SpawnCommand(JavaPlugin plugin) {
         this.plugin = plugin;
+
+        plugin.getCommand("spawn").setExecutor(this);
     }
 
 

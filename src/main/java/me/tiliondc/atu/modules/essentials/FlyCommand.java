@@ -20,6 +20,11 @@ public class FlyCommand implements CommandExecutor{
         plugin.getCommand("fly").setExecutor(this);
         this.noFalldamage = falldamage;
 
+        for(Player player : Bukkit.getServer().getOnlinePlayers()) {
+            player.setFlying(false);
+            player.setAllowFlight(false);
+        }
+
     }
 
     @Override
