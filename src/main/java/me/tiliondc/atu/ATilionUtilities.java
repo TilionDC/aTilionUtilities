@@ -1,31 +1,48 @@
 package me.tiliondc.atu;
 
-import me.tiliondc.atu.modules.BedSleepVote;
-import me.tiliondc.atu.modules.RepairExplosionDamage;
-import me.tiliondc.atu.modules.atuadmin.ATUCommand;
-import me.tiliondc.atu.modules.atuadmin.SudoCommand;
-import me.tiliondc.atu.modules.chairs.StairChairListener;
-import me.tiliondc.atu.modules.chatandsigncolors.ChatAndSignColorsListemer;
+import me.tiliondc.atu.modules.atu.ATUCommand;
+import me.tiliondc.atu.modules.bedsleepvote.BedSleepVote;
+import me.tiliondc.atu.modules.chatandsigncolor.ChatAndSignColorsListemer;
 import me.tiliondc.atu.modules.chestlock.ChestLockListener;
 import me.tiliondc.atu.modules.editsign.EditSignCommand;
-import me.tiliondc.atu.modules.elevator.ElevatorSignListener;
-import me.tiliondc.atu.modules.essentials.*;
-import me.tiliondc.atu.modules.kits.KitCommand;
-import me.tiliondc.atu.modules.nick.NickAndRevealCommand;
+import me.tiliondc.atu.modules.elevatorsign.ElevatorSignListener;
+import me.tiliondc.atu.modules.feed.FeedCommand;
+import me.tiliondc.atu.modules.fly.FlyCommand;
+import me.tiliondc.atu.modules.hat.HatCommand;
+import me.tiliondc.atu.modules.heal.HealCommand;
+import me.tiliondc.atu.modules.kit.KitCommand;
+import me.tiliondc.atu.modules.nickandreveal.NickAndRevealCommand;
+import me.tiliondc.atu.modules.pathblock.PathBlockListener;
+import me.tiliondc.atu.modules.playerspecifictime.PlayerSpecificTimeCommand;
+import me.tiliondc.atu.modules.playerspecificweather.PlayerSpecificWeatherCommand;
 import me.tiliondc.atu.modules.rules.RulesCommand;
-import me.tiliondc.atu.modules.speedpaths.PathBlockListener;
+import me.tiliondc.atu.modules.spawn.SpawnCommand;
+import me.tiliondc.atu.modules.stairchair.StairChairListener;
+import me.tiliondc.atu.modules.sudo.SudoCommand;
 import org.bukkit.World;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.event.entity.ExplosionPrimeEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.world.WorldUnloadEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 
+/**
+ * Main plugin class. Used to load the plugin.
+ *
+ * This class shouldn't be used by another plugin, however it will be commented for educational purposes.
+ *
+ */
+
 public class ATilionUtilities extends JavaPlugin {
 
+
+    /**
+     * onEnable() is run when the plugin is being enabled.
+     *
+     * It load each module individually with consideration to if their enabled node is set to true in the config.
+     */
     @Override
     public void onEnable() {
         super.onEnable();
@@ -108,6 +125,12 @@ public class ATilionUtilities extends JavaPlugin {
 
     }
 
+    /**
+     * onDisable is run when the server is shutting down, restarting or disabling the plugin.
+     *
+     * When disabling this plugin all players will be kicked(forced to quit) and all worlds will be unloaded.
+     * so try to not disable this plugin. It has to do with saving settings.
+     */
     @Override
     public void onDisable() {
         super.onDisable();
@@ -120,6 +143,13 @@ public class ATilionUtilities extends JavaPlugin {
         }
     }
 
+    /**
+     *
+     * createConfig() creates a costum premade config instead of using the bukkitapi.
+     * This makes it a little more work but the config is a lot better.
+     *
+     * This method is due to change, will be updated to a better system.
+     */
     private void createConfig() {
         try {
             if (!getDataFolder().exists()) {

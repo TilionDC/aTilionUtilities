@@ -27,6 +27,11 @@ public class ChestLockListener implements Listener, CommandExecutor {
 
     JavaPlugin plugin;
 
+    /**
+     *
+     * @param plugin
+     */
+
     public ChestLockListener(JavaPlugin plugin) {
 
         this.plugin = plugin;
@@ -35,6 +40,11 @@ public class ChestLockListener implements Listener, CommandExecutor {
         plugin.getCommand("signeditplayer").setExecutor(this);
 
     }
+
+    /**
+     * 
+     * @param e
+     */
 
     @EventHandler
     public void playerChangeSign(SignChangeEvent e) {

@@ -14,16 +14,32 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ *
+ */
+
 public class EditSignCommand implements CommandExecutor {
 
     JavaPlugin plugin;
 
+    /**
+     *
+     * @param plugin
+     */
     public EditSignCommand(JavaPlugin plugin) {
         this.plugin = plugin;
 
         plugin.getCommand("signedit").setExecutor(this);
     }
 
+    /**
+     *
+     * @param commandSender
+     * @param command
+     * @param s
+     * @param strings
+     * @return
+     */
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
 
